@@ -1,5 +1,4 @@
 ﻿using NLua;
-using OpenTK.Graphics.ES11;
 
 namespace SteelEngine
 {
@@ -18,41 +17,50 @@ namespace SteelEngine
 
         public Engine(EngineProperties properties)
         {
-            luaState = new Lua();
+            // initialize window
             window = new Window(properties.width, properties.height, properties.title + $" v{properties.version}");
             window.onUpdateFrame += onUpdateFrame;
             window.onRenderFrame += onRenderFrame;
             window.onLoad += onLoad;
 
+            // initialize other
+            luaState = new Lua();
+
+            // finalize
             using (window)
             {
                 window.Run();
             }
         }
 
-        private void AddLibariesToLua()
-        {
-            luaState.NewTable("Steel");
-            luaState.LoadCLRPackage();
-            luaState.DoString("import ('SteelEngine', 'SteelEngine')");
-        }
-
         private void onLoad()
         {
             luaState["WORKING_DIR"] = ".";
-            AddLibariesToLua();
+
+            // load C# assembly
+            luaState.NewTable("Steel");
+            luaState.LoadCLRPackage();
+            luaState.DoString("import ('SteelEngine', 'SteelEngine')");
+
+            // load file
             luaState.DoFile("main.lua");
+
+            // lua event
             luaState.GetFunction("Steel.Load").Call();
         }
 
         private void onUpdateFrame(float deltaTime)
         {
-            luaState.GetFunction("Steel.Update").Call(deltaTime);
+            // system calls
             Input.Update();
+
+            // lua event
+            luaState.GetFunction("Steel.Update").Call(deltaTime);
         }
 
         private void onRenderFrame()
         {
+            // lua event
             luaState.GetFunction("Steel.Render").Call();
         }
     }

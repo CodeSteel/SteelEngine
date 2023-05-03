@@ -14,7 +14,7 @@ namespace SteelEngine
                 version = "1.0"
             };
 
-            Engine engine = new Engine(properties);
+            new Engine(properties);
         }
     }
 }
