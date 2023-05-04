@@ -2,11 +2,11 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Class Draw
- </title>
+      <title>Class Time
+ | Steel Engine </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class Draw
- ">
+      <meta name="title" content="Class Time
+ | Steel Engine ">
       
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../styles/docfx.min.css">
@@ -14,8 +14,8 @@
       <meta name="docfx:navrel" content="../toc.html">
       <meta name="docfx:tocrel" content="toc.html">
       
-      
-      <meta name="docfx:docurl" content="https://github.com/CodeSteel/SteelEngine/new/main/apiSpec/new?filename=SteelEngine_Draw.md&amp;value=---%0Auid%3A%20SteelEngine.Draw%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="docfx:rel" content="../">
+      <meta name="docfx:docurl" content="https://github.com/CodeSteel/SteelEngine/new/main/apiSpec/new?filename=SteelEngine_Lua_Time.md&amp;value=---%0Auid%3A%20SteelEngine.Lua.Time%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
 
       <script>
         MathJax = {
@@ -34,14 +34,18 @@
       <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
         <div class="container-xxl flex-nowrap">
           <a class="navbar-brand" href="../index.html">
-            <img id="logo" class="svg" src="../logo.svg" alt="">
-            
+            <img id="logo" class="svg" src="../logo.svg" alt="Steel Engine">
+            Steel Engine
           </a>
           <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
             <i class="bi bi-three-dots"></i>
           </button>
           <div class="collapse navbar-collapse" id="navpanel">
             <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
             </div>
           </div>
         </div>
@@ -70,25 +74,26 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="SteelEngine.Draw">
+        <article data-uid="SteelEngine.Lua.Time">
 
 
 
-  <h1 id="SteelEngine_Draw" data-uid="SteelEngine.Draw" class="text-break">
-    Class Draw
-  <a class="header-action link-secondary" title="View source" href="https://github.com/CodeSteel/SteelEngine/blob/main/SteelEngine/Draw.cs/#L6"><i class="bi bi-code-slash"></i></a>
+  <h1 id="SteelEngine_Lua_Time" data-uid="SteelEngine.Lua.Time" class="text-break">
+    Class Time
+  <a class="header-action link-secondary" title="View source" href="https://github.com/CodeSteel/SteelEngine/blob/main/SteelEngine/Lua/Time.cs/#L9"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
-    <dl><dt>Namespace</dt><dd><a class="xref" href="SteelEngine.html">SteelEngine</a></dd></dl>
+    <dl><dt>Namespace</dt><dd><a class="xref" href="SteelEngine.html">SteelEngine</a>.<a class="xref" href="SteelEngine.Lua.html">Lua</a></dd></dl>
   <dl><dt>Assembly</dt><dd>SteelEngine.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>This is used to bring all the time outputs into one class.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static class Draw</code></pre>
+    <pre><code class="lang-csharp hljs">public class Time</code></pre>
   </div>
 
 
@@ -98,7 +103,7 @@
     <dt>Inheritance</dt>
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
-      <div><span class="xref">Draw</span></div>
+      <div><span class="xref">Time</span></div>
     </dd>
   </dl>
 
@@ -139,31 +144,25 @@
 </h2>
 
 
-  <a id="SteelEngine_Draw_DrawRectangle_" data-uid="SteelEngine.Draw.DrawRectangle*"></a>
+  <a id="SteelEngine_Lua_Time_GetDeltaTime_" data-uid="SteelEngine.Lua.Time.GetDeltaTime*"></a>
 
-  <h3 id="SteelEngine_Draw_DrawRectangle_System_Single_System_Single_System_Single_System_Single_SteelEngine_Color_" data-uid="SteelEngine.Draw.DrawRectangle(System.Single,System.Single,System.Single,System.Single,SteelEngine.Color)">
-  DrawRectangle(float, float, float, float, Color)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/CodeSteel/SteelEngine/blob/main/SteelEngine/Draw.cs/#L8"><i class="bi bi-code-slash"></i></a>
+  <h3 id="SteelEngine_Lua_Time_GetDeltaTime" data-uid="SteelEngine.Lua.Time.GetDeltaTime">
+  GetDeltaTime()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/CodeSteel/SteelEngine/blob/main/SteelEngine/Lua/Time.cs/#L40"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Returns the amount of time it took to render the last frame in seconds.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void DrawRectangle(float x, float y, float width, float height, Color color)</code></pre>
+    <pre><code class="lang-csharp hljs">public static float GetDeltaTime()</code></pre>
   </div>
 
-  <h4 class="section">Parameters</h4>
+
+  <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
-    <dd></dd>
-    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
-    <dd></dd>
-    <dt><code>width</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
-    <dd></dd>
-    <dt><code>height</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
-    <dd></dd>
-    <dt><code>color</code> <a class="xref" href="SteelEngine.Color.html">Color</a></dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
     <dd></dd>
   </dl>
 
@@ -177,38 +176,54 @@
 
 
 
+  <a id="SteelEngine_Lua_Time_GetTime_" data-uid="SteelEngine.Lua.Time.GetTime*"></a>
 
-  <a id="SteelEngine_Draw_DrawRoundedRectangle_" data-uid="SteelEngine.Draw.DrawRoundedRectangle*"></a>
-
-  <h3 id="SteelEngine_Draw_DrawRoundedRectangle_System_Single_System_Single_System_Single_System_Single_System_Single_SteelEngine_Color_System_Int32_" data-uid="SteelEngine.Draw.DrawRoundedRectangle(System.Single,System.Single,System.Single,System.Single,System.Single,SteelEngine.Color,System.Int32)">
-  DrawRoundedRectangle(float, float, float, float, float, Color, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/CodeSteel/SteelEngine/blob/main/SteelEngine/Draw.cs/#L21"><i class="bi bi-code-slash"></i></a>
+  <h3 id="SteelEngine_Lua_Time_GetTime" data-uid="SteelEngine.Lua.Time.GetTime">
+  GetTime()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/CodeSteel/SteelEngine/blob/main/SteelEngine/Lua/Time.cs/#L26"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Returns the amount of time the appliction has been running.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void DrawRoundedRectangle(float roundness, float x, float y, float width, float height, Color color, int segmentsPerCorner = 8)</code></pre>
+    <pre><code class="lang-csharp hljs">public static double GetTime()</code></pre>
   </div>
 
-  <h4 class="section">Parameters</h4>
+
+  <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><code>roundness</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
-    <dd></dd>
-    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
-    <dd></dd>
-    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
-    <dd></dd>
-    <dt><code>width</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
-    <dd></dd>
-    <dt><code>height</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
-    <dd></dd>
-    <dt><code>color</code> <a class="xref" href="SteelEngine.Color.html">Color</a></dt>
-    <dd></dd>
-    <dt><code>segmentsPerCorner</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
     <dd></dd>
   </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SteelEngine_Lua_Time_Initialize_" data-uid="SteelEngine.Lua.Time.Initialize*"></a>
+
+  <h3 id="SteelEngine_Lua_Time_Initialize" data-uid="SteelEngine.Lua.Time.Initialize">
+  Initialize()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/CodeSteel/SteelEngine/blob/main/SteelEngine/Lua/Time.cs/#L17"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Used internally to start the time process.
+(Warning) There is no need to call this yourself.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Initialize()</code></pre>
+  </div>
+
 
 
 
@@ -225,7 +240,7 @@
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/CodeSteel/SteelEngine/blob/main/SteelEngine/Draw.cs/#L6" class="edit-link">Edit this page</a>
+          <a href="https://github.com/CodeSteel/SteelEngine/blob/main/SteelEngine/Lua/Time.cs/#L9" class="edit-link">Edit this page</a>
         </div>
 
         
@@ -236,6 +251,7 @@
       </div>
     </main>
 
+    <div class="container-xxl search-results" id="search-results"></div>
 
     <footer class="border-top">
       <div class="container-xxl">

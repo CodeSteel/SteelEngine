@@ -4,24 +4,12 @@
   "xrefmap": "xrefmap.yml",
   "files": [
     {
-      "type": "ManagedReference",
-      "source_relative_path": "api/SteelEngine.Color.yml",
+      "type": "Resource",
       "output": {
-        ".html": {
-          "relative_path": "api/SteelEngine.Color.html"
+        "resource": {
+          "relative_path": "index.json"
         }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/SteelEngine.Draw.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/SteelEngine.Draw.html"
-        }
-      },
-      "version": ""
+      }
     },
     {
       "type": "ManagedReference",
@@ -35,10 +23,80 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/SteelEngine.KeyCode.yml",
+      "source_relative_path": "api/SteelEngine.Lua.Color.yml",
       "output": {
         ".html": {
-          "relative_path": "api/SteelEngine.KeyCode.html"
+          "relative_path": "api/SteelEngine.Lua.Color.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SteelEngine.Lua.CursorState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SteelEngine.Lua.CursorState.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SteelEngine.Lua.Draw.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SteelEngine.Lua.Draw.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SteelEngine.Lua.Global.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SteelEngine.Lua.Global.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SteelEngine.Lua.KeyCode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SteelEngine.Lua.KeyCode.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SteelEngine.Lua.Time.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SteelEngine.Lua.Time.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SteelEngine.Lua.Window.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SteelEngine.Lua.Window.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SteelEngine.Lua.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SteelEngine.Lua.html"
         }
       },
       "version": ""
@@ -102,6 +160,16 @@
         },
         ".json": {
           "relative_path": "api/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/getting_started.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/getting_started.html"
         }
       },
       "version": ""

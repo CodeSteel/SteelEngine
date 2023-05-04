@@ -2,10 +2,10 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Class Renderer
+      <title>Class Draw
  | Steel Engine </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class Renderer
+      <meta name="title" content="Class Draw
  | Steel Engine ">
       
       <link rel="icon" href="../favicon.ico">
@@ -15,7 +15,7 @@
       <meta name="docfx:tocrel" content="toc.html">
       
       <meta name="docfx:rel" content="../">
-      <meta name="docfx:docurl" content="https://github.com/CodeSteel/SteelEngine/new/main/apiSpec/new?filename=SteelEngine_Renderer.md&amp;value=---%0Auid%3A%20SteelEngine.Renderer%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="docfx:docurl" content="https://github.com/CodeSteel/SteelEngine/new/main/apiSpec/new?filename=SteelEngine_Lua_Draw.md&amp;value=---%0Auid%3A%20SteelEngine.Lua.Draw%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
 
       <script>
         MathJax = {
@@ -74,25 +74,26 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="SteelEngine.Renderer">
+        <article data-uid="SteelEngine.Lua.Draw">
 
 
 
-  <h1 id="SteelEngine_Renderer" data-uid="SteelEngine.Renderer" class="text-break">
-    Class Renderer
-  <a class="header-action link-secondary" title="View source" href="https://github.com/CodeSteel/SteelEngine/blob/main/SteelEngine/Renderer.cs/#L7"><i class="bi bi-code-slash"></i></a>
+  <h1 id="SteelEngine_Lua_Draw" data-uid="SteelEngine.Lua.Draw" class="text-break">
+    Class Draw
+  <a class="header-action link-secondary" title="View source" href="https://github.com/CodeSteel/SteelEngine/blob/main/SteelEngine/Lua/Draw.cs/#L9"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
-    <dl><dt>Namespace</dt><dd><a class="xref" href="SteelEngine.html">SteelEngine</a></dd></dl>
+    <dl><dt>Namespace</dt><dd><a class="xref" href="SteelEngine.html">SteelEngine</a>.<a class="xref" href="SteelEngine.Lua.html">Lua</a></dd></dl>
   <dl><dt>Assembly</dt><dd>SteelEngine.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>This class is used for sending graphics to the renderer.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static class Renderer</code></pre>
+    <pre><code class="lang-csharp hljs">public static class Draw</code></pre>
   </div>
 
 
@@ -102,7 +103,7 @@
     <dt>Inheritance</dt>
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
-      <div><span class="xref">Renderer</span></div>
+      <div><span class="xref">Draw</span></div>
     </dd>
   </dl>
 
@@ -143,23 +144,70 @@
 </h2>
 
 
-  <a id="SteelEngine_Renderer_DrawPoly_" data-uid="SteelEngine.Renderer.DrawPoly*"></a>
+  <a id="SteelEngine_Lua_Draw_DrawCircle_" data-uid="SteelEngine.Lua.Draw.DrawCircle*"></a>
 
-  <h3 id="SteelEngine_Renderer_DrawPoly_System_Single___SteelEngine_Lua_Color_" data-uid="SteelEngine.Renderer.DrawPoly(System.Single[],SteelEngine.Lua.Color)">
-  DrawPoly(float[], Color)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/CodeSteel/SteelEngine/blob/main/SteelEngine/Renderer.cs/#L37"><i class="bi bi-code-slash"></i></a>
+  <h3 id="SteelEngine_Lua_Draw_DrawCircle_System_Single_System_Single_System_Single_SteelEngine_Lua_Color_System_Int32_" data-uid="SteelEngine.Lua.Draw.DrawCircle(System.Single,System.Single,System.Single,SteelEngine.Lua.Color,System.Int32)">
+  DrawCircle(float, float, float, Color, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/CodeSteel/SteelEngine/blob/main/SteelEngine/Lua/Draw.cs/#L77"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Draws a circle at the position.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void DrawPoly(float[] vertices, Color color)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void DrawCircle(float x, float y, float radius, Color color, int segments = 16)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>vertices</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>[]</dt>
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>radius</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>color</code> <a class="xref" href="SteelEngine.Lua.Color.html">Color</a></dt>
+    <dd></dd>
+    <dt><code>segments</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SteelEngine_Lua_Draw_DrawRectangle_" data-uid="SteelEngine.Lua.Draw.DrawRectangle*"></a>
+
+  <h3 id="SteelEngine_Lua_Draw_DrawRectangle_System_Single_System_Single_System_Single_System_Single_SteelEngine_Lua_Color_" data-uid="SteelEngine.Lua.Draw.DrawRectangle(System.Single,System.Single,System.Single,System.Single,SteelEngine.Lua.Color)">
+  DrawRectangle(float, float, float, float, Color)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/CodeSteel/SteelEngine/blob/main/SteelEngine/Lua/Draw.cs/#L19"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Draws a rectangle at the position.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void DrawRectangle(float x, float y, float width, float height, Color color)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>width</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>height</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
     <dd></dd>
     <dt><code>color</code> <a class="xref" href="SteelEngine.Lua.Color.html">Color</a></dt>
     <dd></dd>
@@ -176,58 +224,37 @@
 
 
 
-  <a id="SteelEngine_Renderer_Initilize_" data-uid="SteelEngine.Renderer.Initilize*"></a>
+  <a id="SteelEngine_Lua_Draw_DrawRoundedRectangle_" data-uid="SteelEngine.Lua.Draw.DrawRoundedRectangle*"></a>
 
-  <h3 id="SteelEngine_Renderer_Initilize_System_Int32_System_Int32_" data-uid="SteelEngine.Renderer.Initilize(System.Int32,System.Int32)">
-  Initilize(int, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/CodeSteel/SteelEngine/blob/main/SteelEngine/Renderer.cs/#L16"><i class="bi bi-code-slash"></i></a>
+  <h3 id="SteelEngine_Lua_Draw_DrawRoundedRectangle_System_Single_System_Single_System_Single_System_Single_System_Single_SteelEngine_Lua_Color_System_Int32_" data-uid="SteelEngine.Lua.Draw.DrawRoundedRectangle(System.Single,System.Single,System.Single,System.Single,System.Single,SteelEngine.Lua.Color,System.Int32)">
+  DrawRoundedRectangle(float, float, float, float, float, Color, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/CodeSteel/SteelEngine/blob/main/SteelEngine/Lua/Draw.cs/#L42"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Draws a rectangle at the position, taking in the roundness.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void Initilize(int screenWidth, int screenHeight)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void DrawRoundedRectangle(float roundness, float x, float y, float width, float height, Color color, int segmentsPerCorner = 8)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>screenWidth</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dt><code>roundness</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p>This is a 0.0f-1.0f value, measures the amount of roundness the corners have.</p>
+</dd>
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
     <dd></dd>
-    <dt><code>screenHeight</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
     <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-
-  <a id="SteelEngine_Renderer_OnWindowResize_" data-uid="SteelEngine.Renderer.OnWindowResize*"></a>
-
-  <h3 id="SteelEngine_Renderer_OnWindowResize_System_Int32_System_Int32_" data-uid="SteelEngine.Renderer.OnWindowResize(System.Int32,System.Int32)">
-  OnWindowResize(int, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/CodeSteel/SteelEngine/blob/main/SteelEngine/Renderer.cs/#L82"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void OnWindowResize(int screenWidth, int screenHeight)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>screenWidth</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dt><code>width</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
     <dd></dd>
-    <dt><code>screenHeight</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dt><code>height</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>color</code> <a class="xref" href="SteelEngine.Lua.Color.html">Color</a></dt>
+    <dd></dd>
+    <dt><code>segmentsPerCorner</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
     <dd></dd>
   </dl>
 
@@ -246,7 +273,7 @@
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/CodeSteel/SteelEngine/blob/main/SteelEngine/Renderer.cs/#L7" class="edit-link">Edit this page</a>
+          <a href="https://github.com/CodeSteel/SteelEngine/blob/main/SteelEngine/Lua/Draw.cs/#L9" class="edit-link">Edit this page</a>
         </div>
 
         

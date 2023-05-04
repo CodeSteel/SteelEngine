@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Welcome to the Steel Engine Documentaiton! | Steel Engine </title>
+      <title>1. Getting Started | Steel Engine </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Welcome to the Steel Engine Documentaiton! | Steel Engine ">
+      <meta name="title" content="1. Getting Started | Steel Engine ">
       
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../styles/docfx.min.css">
@@ -13,7 +13,7 @@
       <meta name="docfx:tocrel" content="toc.html">
       
       <meta name="docfx:rel" content="../">
-      <meta name="docfx:docurl" content="https://github.com/CodeSteel/SteelEngine/blob/main/docs/articles/intro.md/#L1">
+      <meta name="docfx:docurl" content="https://github.com/CodeSteel/SteelEngine/blob/main/docs/articles/getting_started.md/#L1">
 
       <script>
         MathJax = {
@@ -73,13 +73,35 @@
         </div>
 
         <article data-uid="">
-<h1 id="welcome-to-the-steel-engine-documentaiton">Welcome to the Steel Engine Documentaiton!</h1>
+<h1 id="1-getting-started">1. Getting Started</h1>
 
-<p>Thank you for using the Steel Engine! ❤️</p>
+<p>Create a new folder and inside it, create a new file <code>main.lua</code>. You will need four functions, as defined below.</p>
+<pre><code class="lang-lua">-- Called before the game is loaded with the EngineProperties object. 
+-- The EngineProperties object can be modifed and must be returned to the engine.
+function Steel.Preload(engineProperties)
+	engineProperties.Width = 1000
+	engineProperties.Height = 740
+	
+	return engineProperties
+end
+
+function Steel.Load()
+	-- called when the game is initially loaded
+end
+
+function Steel.Update(dt)
+	-- called once every frame 
+end
+
+function Steel.Render()
+	-- called once every frame, for rendering.
+end
+
+</code></pre>
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/CodeSteel/SteelEngine/blob/main/docs/articles/intro.md/#L1" class="edit-link">Edit this page</a>
+          <a href="https://github.com/CodeSteel/SteelEngine/blob/main/docs/articles/getting_started.md/#L1" class="edit-link">Edit this page</a>
         </div>
 
         <div class="next-article d-print-none border-top" id="nextArticle"></div>
