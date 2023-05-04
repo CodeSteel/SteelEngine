@@ -1,0 +1,288 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SteelEngine</name>
+    </assembly>
+    <members>
+        <member name="T:SteelEngine.EngineProperties">
+            <summary>
+            This is used to define the 'startup' parameters.
+            An EngineProperties object is passed in the Steel.Preload function and returned before starting the engine.
+            </summary>
+        </member>
+        <member name="F:SteelEngine.EngineProperties.Width">
+            <summary>
+            The width of the window.
+            </summary>
+        </member>
+        <member name="F:SteelEngine.EngineProperties.Height">
+            <summary>
+            The height of the window.
+            </summary>
+        </member>
+        <member name="F:SteelEngine.EngineProperties.Title">
+            <summary>
+            The title of the window.
+            </summary>
+        </member>
+        <member name="F:SteelEngine.EngineProperties.Version">
+            <summary>
+            (optional) The version of the application.
+            </summary>
+        </member>
+        <member name="F:SteelEngine.EngineProperties.BackgroundColor">
+            <summary>
+            The background color to draw when cleared.
+            </summary>
+        </member>
+        <member name="T:SteelEngine.Lua.Color">
+            <summary>
+            A typical Color class used to store `rgba` values.
+            </summary>
+        </member>
+        <member name="M:SteelEngine.Lua.Color.#ctor(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Creates a new Color object with the rgb value format.
+            The Alpha will default to 255.
+            </summary>
+            <param name="_r"></param>
+            <param name="_g"></param>
+            <param name="_b"></param>
+        </member>
+        <member name="M:SteelEngine.Lua.Color.#ctor(System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Creates a new Color object with the `rgba` value format.
+            </summary>
+            <param name="_r"></param>
+            <param name="_g"></param>
+            <param name="_b"></param>
+            <param name="_a"></param>
+        </member>
+        <member name="M:SteelEngine.Lua.Color.WithAlpha(System.Int32)">
+            <summary>
+            Copies itself into a new color and takes the alpha value
+            </summary>
+            <param name="_a"></param>
+            <returns></returns>
+        </member>
+        <member name="T:SteelEngine.Lua.Draw">
+            <summary>
+            This class is used for sending graphics to the renderer.
+            </summary>
+        </member>
+        <member name="M:SteelEngine.Lua.Draw.DrawRectangle(System.Single,System.Single,System.Single,System.Single,SteelEngine.Lua.Color)">
+            <summary>
+            Draws a rectangle at the position.
+            </summary>
+            <param name="x"></param>
+            <param name="y"></param>
+            <param name="width"></param>
+            <param name="height"></param>
+            <param name="color"></param>
+        </member>
+        <member name="M:SteelEngine.Lua.Draw.DrawRoundedRectangle(System.Single,System.Single,System.Single,System.Single,System.Single,SteelEngine.Lua.Color,System.Int32)">
+            <summary>
+            Draws a rectangle at the position, taking in the roundness.
+            </summary>
+            <param name="roundness">This is a 0.0f-1.0f value, measures the amount of roundness the corners have.</param>
+            <param name="x"></param>
+            <param name="y"></param>
+            <param name="width"></param>
+            <param name="height"></param>
+            <param name="color"></param>
+            <param name="segmentsPerCorner"></param>
+        </member>
+        <member name="M:SteelEngine.Lua.Draw.DrawCircle(System.Single,System.Single,System.Single,SteelEngine.Lua.Color,System.Int32)">
+            <summary>
+            Draws a circle at the position.
+            </summary>
+            <param name="x"></param>
+            <param name="y"></param>
+            <param name="radius"></param>
+            <param name="color"></param>
+            <param name="segments"></param>
+        </member>
+        <member name="T:SteelEngine.Lua.CursorState">
+            <summary>
+            The state of the Cursor when the application is focused.
+            </summary>
+        </member>
+        <member name="F:SteelEngine.Lua.CursorState.NONE">
+            <summary>
+            Cursor is visible and not locked to the window. Default setting.
+            </summary>
+        </member>
+        <member name="F:SteelEngine.Lua.CursorState.HIDDEN">
+            <summary>
+            Cursor is hidden when inside the window but is not locked to the window.
+            </summary>
+        </member>
+        <member name="F:SteelEngine.Lua.CursorState.LOCKED">
+            <summary>
+            Cursor is hidden and locked to the window.
+            </summary>
+        </member>
+        <member name="T:SteelEngine.Lua.Global">
+            <summary>
+            Represents Lua's global class.
+            </summary>
+        </member>
+        <member name="M:SteelEngine.Lua.Global.Lerp(System.Single,System.Single,System.Single)">
+            <summary>
+            Returns a lerped value from a to b using t as Time.
+            </summary>
+            <param name="a"></param>
+            <param name="b"></param>
+            <param name="t"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SteelEngine.Lua.Global.ScrW">
+            <summary>
+            The width of the viewport screen.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SteelEngine.Lua.Global.ScrH">
+            <summary>
+            The height of the viewport screen.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SteelEngine.Lua.Global.Clamp(System.Single,System.Single,System.Single)">
+            <summary>
+            Clamps a value between a min and max.
+            </summary>
+            <param name="value"></param>
+            <param name="min"></param>
+            <param name="max"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SteelEngine.Lua.Input.Update">
+            <summary>
+            Called every frame to update the input state.
+            </summary>
+        </member>
+        <member name="M:SteelEngine.Lua.Input.Event_OnKeyDown(OpenTK.Windowing.GraphicsLibraryFramework.Keys)">
+            <summary>
+            This method is called when a key is pressed.
+            </summary>
+            <param name="key"></param>
+        </member>
+        <member name="M:SteelEngine.Lua.Input.Event_OnKeyUp(OpenTK.Windowing.GraphicsLibraryFramework.Keys)">
+            <summary>
+            This method is called when a key is released.
+            </summary>
+            <param name="key"></param>
+        </member>
+        <member name="M:SteelEngine.Lua.Input.GetKey(System.Int32)">
+            <summary>
+            Returns if the key is being pressed.
+            </summary>
+            <param name="key">Use a KeyCode.</param>
+            <returns></returns>
+        </member>
+        <member name="M:SteelEngine.Lua.Input.GetKeyDown(System.Int32)">
+            <summary>
+            Retuns if the key was pressed.
+            </summary>
+            <param name="key">Use a KeyCode</param>
+            <returns></returns>
+        </member>
+        <member name="T:SteelEngine.Lua.Time">
+            <summary>
+            This is used to bring all the time outputs into one class.
+            </summary>
+        </member>
+        <member name="M:SteelEngine.Lua.Time.Initialize">
+            <summary>
+            Used internally to start the time process.
+            (Warning) There is no need to call this yourself.
+            </summary>
+        </member>
+        <member name="M:SteelEngine.Lua.Time.GetTime">
+            <summary>
+            Returns the amount of time the appliction has been running.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SteelEngine.Lua.Time.GetDeltaTime">
+            <summary>
+            Returns the amount of time it took to render the last frame in seconds.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:SteelEngine.Lua.Window">
+            <summary>
+            This is used to call functions to the Game Window.
+            </summary>
+        </member>
+        <member name="M:SteelEngine.Lua.Window.SetCursorState(SteelEngine.Lua.CursorState)">
+            <summary>
+            Sets the window's cursor state.
+            </summary>
+            <param name="state"></param>
+        </member>
+        <member name="M:SteelEngine.Lua.Window.GetSize">
+            <summary>
+            Returns the width and height of the window.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SteelEngine.Lua.Window.GetFullscreen">
+            <summary>
+            Returns true if the game is running in Fullscreen mode.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SteelEngine.Lua.Window.GetFocused">
+            <summary>
+            Returns true if the game is the focused window.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SteelEngine.Lua.Window.GetCursorState">
+            <summary>
+            Returns the current Cursor State.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SteelEngine.Lua.Window.Close">
+            <summary>
+            Terminates the application.
+            </summary>
+        </member>
+        <member name="M:SteelEngine.Shader.SetInt(System.String,System.Int32)">
+            <summary>
+            Set a uniform int on this shader.
+            </summary>
+            <param name="name">The name of the uniform</param>
+            <param name="data">The data to set</param>
+        </member>
+        <member name="M:SteelEngine.Shader.SetFloat(System.String,System.Single)">
+            <summary>
+            Set a uniform float on this shader.
+            </summary>
+            <param name="name">The name of the uniform</param>
+            <param name="data">The data to set</param>
+        </member>
+        <member name="M:SteelEngine.Shader.SetMatrix4(System.String,OpenTK.Mathematics.Matrix4)">
+            <summary>
+            Set a uniform Matrix4 on this shader
+            </summary>
+            <param name="name">The name of the uniform</param>
+            <param name="data">The data to set</param>
+            <remarks>
+              <para>
+              The matrix is transposed before being sent to the shader.
+              </para>
+            </remarks>
+        </member>
+        <member name="M:SteelEngine.Shader.SetVector3(System.String,OpenTK.Mathematics.Vector3)">
+            <summary>
+            Set a uniform Vector3 on this shader.
+            </summary>
+            <param name="name">The name of the uniform</param>
+            <param name="data">The data to set</param>
+        </member>
+    </members>
+</doc>

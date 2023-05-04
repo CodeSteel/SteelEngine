@@ -51,7 +51,13 @@
       "modern",
     ],
     "postProcessors": [],
+    "globalMetadata": {
+      "_appTitle": "Steel Engine",
+      "_appName": "Steel Engine",
+      "lang": "en",
+      "_enableSearch":  true
+    },
     "keepFileLink": false,
-    "disableGitFeatures": false
+    "disableGitFeatures": false,
   }
 }

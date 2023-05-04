@@ -1,5 +1,6 @@
 ﻿using OpenTK.Graphics.OpenGL;
 using OpenTK.Mathematics;
+using SteelEngine.Lua;
 
 namespace SteelEngine
 {

@@ -1,4 +1,6 @@
-﻿namespace SteelEngine
+﻿using SteelEngine.Lua;
+
+namespace SteelEngine
 {
     public class SteelEngine
     {
@@ -13,7 +15,17 @@
                 Version = "1.0"
             };
 
-            new Engine(properties);
+            string gamePath;
+            if (args.Length > 0 && Directory.Exists(args[0]))
+            {
+                gamePath = args[0];
+            } else
+            {
+                Console.WriteLine("Invalid game directory provided! Running with no-game!");
+                gamePath = ".";
+            }
+
+            new Engine(properties, gamePath);
         }
     }
 }
