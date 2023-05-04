@@ -7,8 +7,10 @@ namespace SteelEngine
     {
         private static int VertexBufferObject;
         private static int VertexArrayObject;
-        private static Shader ShaderProgram;
-        private static Matrix4 ProjectionMatrix;
+        private static Shader ?ShaderProgram;
+
+        private static int _uProjectionLocation;
+        private static int _uModelViewLocation;
 
         public static void Initilize(int screenWidth, int screenHeight)
         {
@@ -20,12 +22,15 @@ namespace SteelEngine
             VertexBufferObject = GL.GenBuffer();
             GL.BindBuffer(BufferTarget.ArrayBuffer, VertexBufferObject);
 
-            // Initialize the projection matrix
-            ProjectionMatrix = Matrix4.CreateOrthographicOffCenter(0, screenWidth, screenHeight, 0, -1, -1);
-
             // Initialize shader program
             ShaderProgram = new Shader("shaders/shader.vert", "shaders/shader.frag");
             ShaderProgram.Use();
+
+            _uProjectionLocation = GL.GetUniformLocation(ShaderProgram.Handle, "uProjection");
+            _uModelViewLocation = GL.GetUniformLocation(ShaderProgram.Handle, "uModelView");
+
+            // Initialize the projection matrix
+            SetupView(screenWidth, screenHeight);
         }
 
         public static void DrawPoly(float[] vertices, Color color)
@@ -63,9 +68,8 @@ namespace SteelEngine
             GL.VertexAttribPointer(1, 4, VertexAttribPointerType.Float, false, 4 * sizeof(float), 0);
             GL.EnableVertexAttribArray(1);
 
-            // Setup shader
-            ShaderProgram.SetMatrix4("u_projection", ProjectionMatrix);
-            ShaderProgram.Use();
+            // Use shader
+            ShaderProgram!.Use();
 
             // Draw the polygon using TriangleFan
             GL.DrawArrays(PrimitiveType.TriangleFan, 0, vertices.Length / 2);
@@ -76,7 +80,27 @@ namespace SteelEngine
 
         public static void OnWindowResize(int screenWidth, int screenHeight)
         {
-            ProjectionMatrix = Matrix4.CreateOrthographicOffCenter(0, screenWidth, screenHeight, 0, -1, 1);
+            SetupView(screenWidth, screenHeight);
+        }
+
+        private static void SetupView(int screenWidth, int screenHeight)
+        {
+            Matrix4 projection = Matrix4.CreateOrthographicOffCenter(0, screenWidth, screenHeight, 0, -1, 1);
+
+            // Set the projection uniform in the shader
+            ShaderProgram!.Use();
+            GL.UniformMatrix4(_uProjectionLocation, false, ref projection);
+
+            Matrix4 flipX = new Matrix4(
+                -1, 0, 0, screenWidth,
+                 0, 1, 0, 0,
+                 0, 0, 1, 0,
+                 0, 0, 0, 1
+            );
+
+            // Set the model-view uniform in the shader
+            ShaderProgram!.Use();
+            GL.UniformMatrix4(_uModelViewLocation, false, ref flipX);
         }
     }
 }

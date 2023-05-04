@@ -29,8 +29,7 @@ namespace SteelEngine
         {
             base.OnRenderFrame(args);
 
-            // initialize opengl
-            GL.ClearColor(engineProperties.BackgroundColor.ToColor4());
+            // opengl
             GL.Clear(ClearBufferMask.ColorBufferBit | ClearBufferMask.DepthBufferBit);
 
             // event
@@ -53,7 +52,8 @@ namespace SteelEngine
             // initiailize gl
             GL.Enable(EnableCap.DepthTest);
             GL.Enable(EnableCap.Blend);
-            GL.ClearColor(Color4.Black);
+
+            GL.ClearColor(engineProperties.BackgroundColor.ToColor4());
 
             Renderer.Initilize(engineProperties.Width, engineProperties.Height);
 
