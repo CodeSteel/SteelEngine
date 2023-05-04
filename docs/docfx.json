@@ -24,7 +24,7 @@
       {
         "files": [
           "api/**.yml",
-          "../SteelEngine/bin/Debug/net6.0/SteelEngine.xml"
+          "api/index.md"
         ]
       },
       {
