@@ -9,4 +9,4 @@ ___
 
 ___
 
-The purpose of this project is to sharpen my skills with C#, OpenGL, & Game Development.
+The purpose of this project is to sharpen my skills with C#, OpenGL, Github Actions, & Game Development.
