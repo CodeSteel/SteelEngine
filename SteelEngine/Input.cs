@@ -13,6 +13,7 @@ namespace SteelEngine
         /// </summary>
         public static void Update()
         {
+            previousState.Clear();
             for (int i = 0; i < currentState.Count; i++)
             {
                 previousState.Add(currentState[i]);

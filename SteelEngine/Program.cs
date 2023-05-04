@@ -1,6 +1,4 @@
-﻿using OpenTK;
-
-namespace SteelEngine
+﻿namespace SteelEngine
 {
     public class SteelEngine
     {
@@ -8,10 +6,11 @@ namespace SteelEngine
         {
             EngineProperties properties = new()
             {
-                width = 1250,
-                height = 740,
-                title = "Steel Engine",
-                version = "1.0"
+                Width = 1250,
+                Height = 740,
+                BackgroundColor = new Color(0, 0, 0),
+                Title = "Steel Engine",
+                Version = "1.0"
             };
 
             new Engine(properties);

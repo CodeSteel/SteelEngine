@@ -1,4 +1,6 @@
-﻿namespace SteelEngine
+﻿using OpenTK.Mathematics;
+
+namespace SteelEngine
 {
     public class Color
     {
@@ -31,6 +33,11 @@
         public (int, int, int, int) Value()
         {
             return (r, g, b, a);
+        }
+
+        public Color4 ToColor4()
+        {
+            return new Color4(r / 255.0f, g / 255.0f, b / 255.0f, a / 255.0f);
         }
     }
 }

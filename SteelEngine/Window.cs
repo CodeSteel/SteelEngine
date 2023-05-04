@@ -18,25 +18,20 @@ namespace SteelEngine
         public event OnLoadHandler ?onLoad;
         #endregion
 
-        public Window(int width, int height, string title) : base(GameWindowSettings.Default, new NativeWindowSettings() { Size = (width, height), Title = title })
+        EngineProperties engineProperties;
+
+        public Window(EngineProperties properties) : base(GameWindowSettings.Default, new NativeWindowSettings() { Size = (properties.Width, properties.Height), Title = properties.Version == null ? properties.Title : $"{properties.Title} v{properties.Version}"})
         {
+            engineProperties = properties;
         }
 
         protected override void OnRenderFrame(FrameEventArgs args)
         {
             base.OnRenderFrame(args);
 
-            // initialize
-            GL.ClearColor(Color4.Black);
-            GL.Clear(ClearBufferMask.ColorBufferBit);
-
-
-            Draw.DrawRectangle(50, 50, 100, 100, new Color(255, 0, 0));
-
-
-
-            // system calls
-            Draw.Render();
+            // initialize opengl
+            GL.ClearColor(engineProperties.BackgroundColor.ToColor4());
+            GL.Clear(ClearBufferMask.ColorBufferBit | ClearBufferMask.DepthBufferBit);
 
             // event
             if (onRenderFrame != null)
@@ -60,8 +55,7 @@ namespace SteelEngine
             GL.Enable(EnableCap.Blend);
             GL.ClearColor(Color4.Black);
 
-            // initialize system
-            Draw.Initialize();
+            Renderer.Initilize(engineProperties.Width, engineProperties.Height);
 
             // event
             if (onLoad != null) 
@@ -81,6 +75,7 @@ namespace SteelEngine
         {
             base.OnResize(e);
             GL.Viewport(0, 0, e.Width, e.Height);
+            Renderer.OnWindowResize(e.Width, e.Height);
         }
 
         protected override void OnKeyDown(KeyboardKeyEventArgs e)

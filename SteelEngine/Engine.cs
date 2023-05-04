@@ -4,10 +4,11 @@ namespace SteelEngine
 {
     public struct EngineProperties
     {
-        public int width;
-        public int height;
-        public string title;
-        public string version;
+        public int Width;
+        public int Height;
+        public string Title;
+        public string? Version;
+        public Color BackgroundColor;
     }
 
     internal class Engine
@@ -17,14 +18,27 @@ namespace SteelEngine
 
         public Engine(EngineProperties properties)
         {
+            // initialize lua
+            luaState = new Lua();
+
+            // load file
+            luaState["WORKING_DIR"] = ".";
+            luaState.NewTable("Steel");
+            luaState.DoFile("main.lua");
+
+            // load C# assembly
+            luaState.LoadCLRPackage();
+            luaState.DoString("import ('SteelEngine', 'SteelEngine')");
+
+            // lua event
+            EngineProperties newProperties = (EngineProperties)luaState.GetFunction("Steel.Preload").Call(properties).First();
+
             // initialize window
-            window = new Window(properties.width, properties.height, properties.title + $" v{properties.version}");
+            window = new Window(newProperties);
             window.onUpdateFrame += onUpdateFrame;
             window.onRenderFrame += onRenderFrame;
             window.onLoad += onLoad;
 
-            // initialize other
-            luaState = new Lua();
 
             // finalize
             using (window)
@@ -35,27 +49,17 @@ namespace SteelEngine
 
         private void onLoad()
         {
-            luaState["WORKING_DIR"] = ".";
-
-            // load C# assembly
-            luaState.NewTable("Steel");
-            luaState.LoadCLRPackage();
-            luaState.DoString("import ('SteelEngine', 'SteelEngine')");
-
-            // load file
-            luaState.DoFile("main.lua");
-
             // lua event
             luaState.GetFunction("Steel.Load").Call();
         }
 
         private void onUpdateFrame(float deltaTime)
         {
-            // system calls
-            Input.Update();
-
             // lua event
             luaState.GetFunction("Steel.Update").Call(deltaTime);
+
+            // system calls
+            Input.Update();
         }
 
         private void onRenderFrame()
