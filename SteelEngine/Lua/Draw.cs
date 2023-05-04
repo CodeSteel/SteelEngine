@@ -90,6 +90,5 @@ namespace SteelEngine.Lua
 
             Renderer.DrawPoly(vertices.ToArray(), color);
         }
-
     }
 }
