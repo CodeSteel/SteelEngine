@@ -1227,19 +1227,6 @@ references:
   isSpec: "True"
   fullName: SteelEngine.Lua.Time.GetTime
   nameWithType: Time.GetTime
-- uid: SteelEngine.Lua.Time.Initialize
-  name: Initialize()
-  href: api/SteelEngine.Lua.Time.html#SteelEngine_Lua_Time_Initialize
-  commentId: M:SteelEngine.Lua.Time.Initialize
-  fullName: SteelEngine.Lua.Time.Initialize()
-  nameWithType: Time.Initialize()
-- uid: SteelEngine.Lua.Time.Initialize*
-  name: Initialize
-  href: api/SteelEngine.Lua.Time.html#SteelEngine_Lua_Time_Initialize_
-  commentId: Overload:SteelEngine.Lua.Time.Initialize
-  isSpec: "True"
-  fullName: SteelEngine.Lua.Time.Initialize
-  nameWithType: Time.Initialize
 - uid: SteelEngine.Lua.Vector2
   name: Vector2
   href: api/SteelEngine.Lua.Vector2.html
@@ -1392,38 +1379,38 @@ references:
   isSpec: "True"
   fullName: SteelEngine.Renderer.DrawPoly
   nameWithType: Renderer.DrawPoly
-- uid: SteelEngine.Renderer.Initilize(System.Int32,System.Int32)
-  name: Initilize(int, int)
-  href: api/SteelEngine.Renderer.html#SteelEngine_Renderer_Initilize_System_Int32_System_Int32_
-  commentId: M:SteelEngine.Renderer.Initilize(System.Int32,System.Int32)
-  name.vb: Initilize(Integer, Integer)
-  fullName: SteelEngine.Renderer.Initilize(int, int)
-  fullName.vb: SteelEngine.Renderer.Initilize(Integer, Integer)
-  nameWithType: Renderer.Initilize(int, int)
-  nameWithType.vb: Renderer.Initilize(Integer, Integer)
-- uid: SteelEngine.Renderer.Initilize*
-  name: Initilize
-  href: api/SteelEngine.Renderer.html#SteelEngine_Renderer_Initilize_
-  commentId: Overload:SteelEngine.Renderer.Initilize
+- uid: SteelEngine.Renderer.Event_OnWindowResize(System.Int32,System.Int32)
+  name: Event_OnWindowResize(int, int)
+  href: api/SteelEngine.Renderer.html#SteelEngine_Renderer_Event_OnWindowResize_System_Int32_System_Int32_
+  commentId: M:SteelEngine.Renderer.Event_OnWindowResize(System.Int32,System.Int32)
+  name.vb: Event_OnWindowResize(Integer, Integer)
+  fullName: SteelEngine.Renderer.Event_OnWindowResize(int, int)
+  fullName.vb: SteelEngine.Renderer.Event_OnWindowResize(Integer, Integer)
+  nameWithType: Renderer.Event_OnWindowResize(int, int)
+  nameWithType.vb: Renderer.Event_OnWindowResize(Integer, Integer)
+- uid: SteelEngine.Renderer.Event_OnWindowResize*
+  name: Event_OnWindowResize
+  href: api/SteelEngine.Renderer.html#SteelEngine_Renderer_Event_OnWindowResize_
+  commentId: Overload:SteelEngine.Renderer.Event_OnWindowResize
   isSpec: "True"
-  fullName: SteelEngine.Renderer.Initilize
-  nameWithType: Renderer.Initilize
-- uid: SteelEngine.Renderer.OnWindowResize(System.Int32,System.Int32)
-  name: OnWindowResize(int, int)
-  href: api/SteelEngine.Renderer.html#SteelEngine_Renderer_OnWindowResize_System_Int32_System_Int32_
-  commentId: M:SteelEngine.Renderer.OnWindowResize(System.Int32,System.Int32)
-  name.vb: OnWindowResize(Integer, Integer)
-  fullName: SteelEngine.Renderer.OnWindowResize(int, int)
-  fullName.vb: SteelEngine.Renderer.OnWindowResize(Integer, Integer)
-  nameWithType: Renderer.OnWindowResize(int, int)
-  nameWithType.vb: Renderer.OnWindowResize(Integer, Integer)
-- uid: SteelEngine.Renderer.OnWindowResize*
-  name: OnWindowResize
-  href: api/SteelEngine.Renderer.html#SteelEngine_Renderer_OnWindowResize_
-  commentId: Overload:SteelEngine.Renderer.OnWindowResize
+  fullName: SteelEngine.Renderer.Event_OnWindowResize
+  nameWithType: Renderer.Event_OnWindowResize
+- uid: SteelEngine.Renderer.Initialize(System.Int32,System.Int32)
+  name: Initialize(int, int)
+  href: api/SteelEngine.Renderer.html#SteelEngine_Renderer_Initialize_System_Int32_System_Int32_
+  commentId: M:SteelEngine.Renderer.Initialize(System.Int32,System.Int32)
+  name.vb: Initialize(Integer, Integer)
+  fullName: SteelEngine.Renderer.Initialize(int, int)
+  fullName.vb: SteelEngine.Renderer.Initialize(Integer, Integer)
+  nameWithType: Renderer.Initialize(int, int)
+  nameWithType.vb: Renderer.Initialize(Integer, Integer)
+- uid: SteelEngine.Renderer.Initialize*
+  name: Initialize
+  href: api/SteelEngine.Renderer.html#SteelEngine_Renderer_Initialize_
+  commentId: Overload:SteelEngine.Renderer.Initialize
   isSpec: "True"
-  fullName: SteelEngine.Renderer.OnWindowResize
-  nameWithType: Renderer.OnWindowResize
+  fullName: SteelEngine.Renderer.Initialize
+  nameWithType: Renderer.Initialize
 - uid: SteelEngine.Shader
   name: Shader
   href: api/SteelEngine.Shader.html

@@ -12,7 +12,7 @@
   "api/SteelEngine.html": {
     "href": "api/SteelEngine.html",
     "title": "Namespace SteelEngine | Steel Engine",
-    "keywords": "Namespace SteelEngine Classes Renderer Shader SteelEngine Structs EngineProperties This is used to define the 'startup' parameters. An EngineProperties object is passed in the Steel.Preload function and returned before starting the engine."
+    "keywords": "Namespace SteelEngine Classes Renderer Used to render shapes into the view. Shader SteelEngine Structs EngineProperties This is used to define the 'startup' parameters. An EngineProperties object is passed in the Steel.Preload function and returned before starting the engine."
   },
   "api/SteelEngine.Lua.Color.html": {
     "href": "api/SteelEngine.Lua.Color.html",
@@ -52,7 +52,7 @@
   "api/SteelEngine.Lua.Time.html": {
     "href": "api/SteelEngine.Lua.Time.html",
     "title": "Class Time | Steel Engine",
-    "keywords": "Class Time Namespace SteelEngine.Lua Assembly SteelEngine.dll This is used to bring all the time outputs into one class. public class Time Inheritance object Time Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Methods GetDeltaTime() Returns the amount of time it took to render the last frame in seconds. public static float GetDeltaTime() Returns float GetTime() Returns the amount of time the appliction has been running. public static double GetTime() Returns double Initialize() Used internally to start the time process. (Warning) There is no need to call this yourself. public static void Initialize()"
+    "keywords": "Class Time Namespace SteelEngine.Lua Assembly SteelEngine.dll This is used to bring all the time outputs into one class. public class Time Inheritance object Time Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Methods GetDeltaTime() Returns the amount of time it took to render the last frame in seconds. public static float GetDeltaTime() Returns float GetTime() Returns the amount of time the appliction has been running. public static double GetTime() Returns double"
   },
   "api/SteelEngine.Lua.Vector2.html": {
     "href": "api/SteelEngine.Lua.Vector2.html",
@@ -67,7 +67,7 @@
   "api/SteelEngine.Renderer.html": {
     "href": "api/SteelEngine.Renderer.html",
     "title": "Class Renderer | Steel Engine",
-    "keywords": "Class Renderer Namespace SteelEngine Assembly SteelEngine.dll public static class Renderer Inheritance object Renderer Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Methods DrawPoly(float[], Color) Draws a polygon to the screen public static void DrawPoly(float[] vertices, Color color) Parameters vertices float[] color Color Initilize(int, int) public static void Initilize(int screenWidth, int screenHeight) Parameters screenWidth int screenHeight int OnWindowResize(int, int) public static void OnWindowResize(int screenWidth, int screenHeight) Parameters screenWidth int screenHeight int"
+    "keywords": "Class Renderer Namespace SteelEngine Assembly SteelEngine.dll Used to render shapes into the view. public static class Renderer Inheritance object Renderer Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Methods DrawPoly(float[], Color) Draws a polygon to the screen public static void DrawPoly(float[] vertices, Color color) Parameters vertices float[] color Color Event_OnWindowResize(int, int) This event is called internally when the window is resized. public static void Event_OnWindowResize(int screenWidth, int screenHeight) Parameters screenWidth int screenHeight int Initialize(int, int) Called internally to initialize the renderer. public static void Initialize(int screenWidth, int screenHeight) Parameters screenWidth int screenHeight int"
   },
   "api/SteelEngine.Shader.html": {
     "href": "api/SteelEngine.Shader.html",
