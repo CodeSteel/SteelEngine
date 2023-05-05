@@ -8,11 +8,11 @@ namespace SteelEngine
         {
             EngineProperties properties = new()
             {
-                Width = 1250,
-                Height = 740,
+                Width = 1240,
+                Height = 720,
                 BackgroundColor = new Color(0, 0, 0),
                 Title = "Steel Engine",
-                Version = "1.0"
+                Version = "1.1"
             };
 
             string gamePath = ".";

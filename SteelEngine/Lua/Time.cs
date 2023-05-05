@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Diagnostics;
+using System.Diagnostics.CodeAnalysis;
 
 namespace SteelEngine.Lua
 {
@@ -14,6 +15,7 @@ namespace SteelEngine.Lua
         /// Used internally to start the time process.
         /// (Warning) There is no need to call this yourself.
         /// </summary>
+        [ExcludeFromCodeCoverage]
         public static void Initialize()
         {
             stopwatch.Start();

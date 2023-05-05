@@ -1,0 +1,7 @@
+apiRules:
+  - exclude:
+      uidRegex: "^Event_"
+      type: Method
+  - exclude:
+      uidRegex: "Initialize$"
+      type: Method

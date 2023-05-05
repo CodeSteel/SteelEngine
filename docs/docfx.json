@@ -3,13 +3,12 @@
     {
       "src": [
         {
-          "files": [
-            "SteelEngine.csproj"
-          ],
+          "files": ["SteelEngine.csproj"],
           "src": "../SteelEngine/"
         }
       ],
       "dest": "api",
+      "filter": "filterConfig.yml",
       "includePrivateMembers": false,
       "disableGitFeatures": false,
       "disableDefaultFilter": false,
@@ -22,42 +21,29 @@
   "build": {
     "content": [
       {
-        "files": [
-          "api/**.yml",
-          "api/index.md"
-        ]
+        "files": ["api/**.yml", "api/index.md"]
       },
       {
-        "files": [
-          "articles/**.md",
-          "articles/**/toc.yml",
-          "toc.yml",
-          "*.md"
-        ]
+        "files": ["articles/**.md", "articles/**/toc.yml", "toc.yml", "*.md"]
       }
     ],
     "resource": [
       {
-        "files": [
-          "images/**"
-        ]
+        "files": ["images/**"]
       }
     ],
     "dest": "_site",
     "globalMetadataFiles": [],
     "fileMetadataFiles": [],
-    "template": [
-      "default",
-      "modern",
-    ],
+    "template": ["default", "modern"],
     "postProcessors": [],
     "globalMetadata": {
       "_appTitle": "Steel Engine",
       "_appName": "Steel Engine",
       "lang": "en",
-      "_enableSearch":  true
+      "_enableSearch": true
     },
     "keepFileLink": false,
-    "disableGitFeatures": false,
+    "disableGitFeatures": false
   }
 }

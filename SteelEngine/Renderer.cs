@@ -3,6 +3,9 @@ using OpenTK.Mathematics;
 
 namespace SteelEngine
 {
+    /// <summary>
+    /// Used to render shapes into the view.
+    /// </summary>
     public static class Renderer
     {
         private static int VertexBufferObject;
@@ -12,7 +15,12 @@ namespace SteelEngine
         private static int _uProjectionLocation;
         private static int _uModelViewLocation;
 
-        public static void Initilize(int screenWidth, int screenHeight)
+        /// <summary>
+        /// Called internally to initialize the renderer.
+        /// </summary>
+        /// <param name="screenWidth"></param>
+        /// <param name="screenHeight"></param>
+        public static void Initialize(int screenWidth, int screenHeight)
         {
             // Create and bind Vertex Array Object
             VertexArrayObject = GL.GenVertexArray();
@@ -85,7 +93,12 @@ namespace SteelEngine
             GL.DeleteBuffer(colorBufferObject);
         }
 
-        public static void OnWindowResize(int screenWidth, int screenHeight)
+        /// <summary>
+        /// This event is called internally when the window is resized.
+        /// </summary>
+        /// <param name="screenWidth"></param>
+        /// <param name="screenHeight"></param>
+        public static void Event_OnWindowResize(int screenWidth, int screenHeight)
         {
             SetupView(screenWidth, screenHeight);
         }

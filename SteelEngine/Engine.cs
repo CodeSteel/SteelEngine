@@ -75,7 +75,6 @@ namespace SteelEngine
             window.onRenderFrame += onRenderFrame;
             window.onLoad += onLoad;
 
-
             // finalize
             using (window)
             {

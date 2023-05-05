@@ -5,6 +5,10 @@ using SteelEngine.Lua;
 
 namespace SteelEngine
 {
+    /// <summary>
+    /// The Game Window of the application.
+    /// Everything is called from here.
+    /// </summary>
     internal class Game : GameWindow
     {
         public static Game instance;
@@ -24,14 +28,14 @@ namespace SteelEngine
 
         public Game(EngineProperties properties) : base(GameWindowSettings.Default, new NativeWindowSettings() { Size = (properties.Width, properties.Height), Title = properties.Version == null ? properties.Title : $"{properties.Title} v{properties.Version}"})
         {
-            engineProperties = properties;
             instance = this;
+            engineProperties = properties;
         }
 
         private static void SetWindowSize(int width, int height)
         {
             GL.Viewport(0, 0, width, height);
-            Renderer.OnWindowResize(width, height);
+            Renderer.Event_OnWindowResize(width, height);
         }
 
         protected override void OnRenderFrame(FrameEventArgs args)
@@ -64,7 +68,7 @@ namespace SteelEngine
 
             GL.ClearColor(engineProperties.BackgroundColor.ToColor4());
 
-            Renderer.Initilize(engineProperties.Width, engineProperties.Height);
+            Renderer.Initialize(engineProperties.Width, engineProperties.Height);
 
             // event
             if (onLoad != null) 
