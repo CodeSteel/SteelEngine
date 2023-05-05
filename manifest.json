@@ -63,6 +63,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/SteelEngine.Lua.Input.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SteelEngine.Lua.Input.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/SteelEngine.Lua.KeyCode.yml",
       "output": {
         ".html": {
@@ -77,6 +87,16 @@
       "output": {
         ".html": {
           "relative_path": "api/SteelEngine.Lua.Time.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SteelEngine.Lua.Vector2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SteelEngine.Lua.Vector2.html"
         }
       },
       "version": ""

@@ -2,10 +2,10 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Class Renderer
+      <title>Class Vector2
  | Steel Engine </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class Renderer
+      <meta name="title" content="Class Vector2
  | Steel Engine ">
       
       <link rel="icon" href="../favicon.ico">
@@ -15,7 +15,7 @@
       <meta name="docfx:tocrel" content="toc.html">
       
       <meta name="docfx:rel" content="../">
-      <meta name="docfx:docurl" content="https://github.com/CodeSteel/SteelEngine/new/main/apiSpec/new?filename=SteelEngine_Renderer.md&amp;value=---%0Auid%3A%20SteelEngine.Renderer%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="docfx:docurl" content="https://github.com/CodeSteel/SteelEngine/new/main/apiSpec/new?filename=SteelEngine_Lua_Vector2.md&amp;value=---%0Auid%3A%20SteelEngine.Lua.Vector2%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
 
       <script>
         MathJax = {
@@ -74,25 +74,26 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="SteelEngine.Renderer">
+        <article data-uid="SteelEngine.Lua.Vector2">
 
 
 
-  <h1 id="SteelEngine_Renderer" data-uid="SteelEngine.Renderer" class="text-break">
-    Class Renderer
-  <a class="header-action link-secondary" title="View source" href="https://github.com/CodeSteel/SteelEngine/blob/main/SteelEngine/Renderer.cs/#L6"><i class="bi bi-code-slash"></i></a>
+  <h1 id="SteelEngine_Lua_Vector2" data-uid="SteelEngine.Lua.Vector2" class="text-break">
+    Class Vector2
+  <a class="header-action link-secondary" title="View source" href="https://github.com/CodeSteel/SteelEngine/blob/main/SteelEngine/Lua/Vector2.cs/#L6"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
-    <dl><dt>Namespace</dt><dd><a class="xref" href="SteelEngine.html">SteelEngine</a></dd></dl>
+    <dl><dt>Namespace</dt><dd><a class="xref" href="SteelEngine.html">SteelEngine</a>.<a class="xref" href="SteelEngine.Lua.html">Lua</a></dd></dl>
   <dl><dt>Assembly</dt><dd>SteelEngine.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Represents a generic 2D vector array.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static class Renderer</code></pre>
+    <pre><code class="lang-csharp hljs">public class Vector2</code></pre>
   </div>
 
 
@@ -102,7 +103,7 @@
     <dt>Inheritance</dt>
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
-      <div><span class="xref">Renderer</span></div>
+      <div><span class="xref">Vector2</span></div>
     </dd>
   </dl>
 
@@ -139,32 +140,25 @@
 
 
 
-  <h2 class="section" id="methods">Methods
+  <h2 class="section" id="constructors">Constructors
 </h2>
 
 
-  <a id="SteelEngine_Renderer_DrawPoly_" data-uid="SteelEngine.Renderer.DrawPoly*"></a>
+  <a id="SteelEngine_Lua_Vector2__ctor_" data-uid="SteelEngine.Lua.Vector2.#ctor*"></a>
 
-  <h3 id="SteelEngine_Renderer_DrawPoly_System_Single___SteelEngine_Lua_Color_" data-uid="SteelEngine.Renderer.DrawPoly(System.Single[],SteelEngine.Lua.Color)">
-  DrawPoly(float[], Color)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/CodeSteel/SteelEngine/blob/main/SteelEngine/Renderer.cs/#L43"><i class="bi bi-code-slash"></i></a>
+  <h3 id="SteelEngine_Lua_Vector2__ctor" data-uid="SteelEngine.Lua.Vector2.#ctor">
+  Vector2()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/CodeSteel/SteelEngine/blob/main/SteelEngine/Lua/Vector2.cs/#L32"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Draws a polygon to the screen</p>
+  <div class="markdown level1 summary"><p>Create a Vector2 object, starting at 0,0.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void DrawPoly(float[] vertices, Color color)</code></pre>
+    <pre><code class="lang-csharp hljs">public Vector2()</code></pre>
   </div>
 
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>vertices</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>[]</dt>
-    <dd></dd>
-    <dt><code>color</code> <a class="xref" href="SteelEngine.Lua.Color.html">Color</a></dt>
-    <dd></dd>
-  </dl>
 
 
 
@@ -177,25 +171,26 @@
 
 
 
-  <a id="SteelEngine_Renderer_Initilize_" data-uid="SteelEngine.Renderer.Initilize*"></a>
+  <a id="SteelEngine_Lua_Vector2__ctor_" data-uid="SteelEngine.Lua.Vector2.#ctor*"></a>
 
-  <h3 id="SteelEngine_Renderer_Initilize_System_Int32_System_Int32_" data-uid="SteelEngine.Renderer.Initilize(System.Int32,System.Int32)">
-  Initilize(int, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/CodeSteel/SteelEngine/blob/main/SteelEngine/Renderer.cs/#L15"><i class="bi bi-code-slash"></i></a>
+  <h3 id="SteelEngine_Lua_Vector2__ctor_System_Single_System_Single_" data-uid="SteelEngine.Lua.Vector2.#ctor(System.Single,System.Single)">
+  Vector2(float, float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/CodeSteel/SteelEngine/blob/main/SteelEngine/Lua/Vector2.cs/#L23"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Create a Vector2 object with arguments.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void Initilize(int screenWidth, int screenHeight)</code></pre>
+    <pre><code class="lang-csharp hljs">public Vector2(float _x, float _y)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>screenWidth</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dt><code>_x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
     <dd></dd>
-    <dt><code>screenHeight</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dt><code>_y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
     <dd></dd>
   </dl>
 
@@ -210,30 +205,63 @@
 
 
 
-  <a id="SteelEngine_Renderer_OnWindowResize_" data-uid="SteelEngine.Renderer.OnWindowResize*"></a>
+  <h2 class="section" id="fields">Fields
+</h2>
 
-  <h3 id="SteelEngine_Renderer_OnWindowResize_System_Int32_System_Int32_" data-uid="SteelEngine.Renderer.OnWindowResize(System.Int32,System.Int32)">
-  OnWindowResize(int, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/CodeSteel/SteelEngine/blob/main/SteelEngine/Renderer.cs/#L88"><i class="bi bi-code-slash"></i></a>
+
+
+  <h3 id="SteelEngine_Lua_Vector2_x" data-uid="SteelEngine.Lua.Vector2.x">
+  x
+  <a class="header-action link-secondary" title="View source" href="https://github.com/CodeSteel/SteelEngine/blob/main/SteelEngine/Lua/Vector2.cs/#L11"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The X position.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void OnWindowResize(int screenWidth, int screenHeight)</code></pre>
+    <pre><code class="lang-csharp hljs">public float x</code></pre>
   </div>
 
-  <h4 class="section">Parameters</h4>
+
+
+
+  <h4 class="section">Field Value</h4>
   <dl class="parameters">
-    <dt><code>screenWidth</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
-    <dd></dd>
-    <dt><code>screenHeight</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
     <dd></dd>
   </dl>
 
 
 
+
+
+
+
+
+
+
+  <h3 id="SteelEngine_Lua_Vector2_y" data-uid="SteelEngine.Lua.Vector2.y">
+  y
+  <a class="header-action link-secondary" title="View source" href="https://github.com/CodeSteel/SteelEngine/blob/main/SteelEngine/Lua/Vector2.cs/#L16"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The Y position.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float y</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
 
 
 
@@ -247,7 +275,7 @@
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/CodeSteel/SteelEngine/blob/main/SteelEngine/Renderer.cs/#L6" class="edit-link">Edit this page</a>
+          <a href="https://github.com/CodeSteel/SteelEngine/blob/main/SteelEngine/Lua/Vector2.cs/#L6" class="edit-link">Edit this page</a>
         </div>
 
         

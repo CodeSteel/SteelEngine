@@ -120,19 +120,6 @@ references:
   isSpec: "True"
   fullName: SteelEngine.Lua.Color.ToColor4
   nameWithType: Color.ToColor4
-- uid: SteelEngine.Lua.Color.Value
-  name: Value()
-  href: api/SteelEngine.Lua.Color.html#SteelEngine_Lua_Color_Value
-  commentId: M:SteelEngine.Lua.Color.Value
-  fullName: SteelEngine.Lua.Color.Value()
-  nameWithType: Color.Value()
-- uid: SteelEngine.Lua.Color.Value*
-  name: Value
-  href: api/SteelEngine.Lua.Color.html#SteelEngine_Lua_Color_Value_
-  commentId: Overload:SteelEngine.Lua.Color.Value
-  isSpec: "True"
-  fullName: SteelEngine.Lua.Color.Value
-  nameWithType: Color.Value
 - uid: SteelEngine.Lua.Color.WithAlpha(System.Int32)
   name: WithAlpha(int)
   href: api/SteelEngine.Lua.Color.html#SteelEngine_Lua_Color_WithAlpha_System_Int32_
@@ -291,6 +278,209 @@ references:
   isSpec: "True"
   fullName: SteelEngine.Lua.Global.ScrW
   nameWithType: Global.ScrW
+- uid: SteelEngine.Lua.Input
+  name: Input
+  href: api/SteelEngine.Lua.Input.html
+  commentId: T:SteelEngine.Lua.Input
+  fullName: SteelEngine.Lua.Input
+  nameWithType: Input
+- uid: SteelEngine.Lua.Input.Event_OnKeyDown(OpenTK.Windowing.GraphicsLibraryFramework.Keys)
+  name: Event_OnKeyDown(Keys)
+  href: api/SteelEngine.Lua.Input.html#SteelEngine_Lua_Input_Event_OnKeyDown_OpenTK_Windowing_GraphicsLibraryFramework_Keys_
+  commentId: M:SteelEngine.Lua.Input.Event_OnKeyDown(OpenTK.Windowing.GraphicsLibraryFramework.Keys)
+  fullName: SteelEngine.Lua.Input.Event_OnKeyDown(OpenTK.Windowing.GraphicsLibraryFramework.Keys)
+  nameWithType: Input.Event_OnKeyDown(Keys)
+- uid: SteelEngine.Lua.Input.Event_OnKeyDown*
+  name: Event_OnKeyDown
+  href: api/SteelEngine.Lua.Input.html#SteelEngine_Lua_Input_Event_OnKeyDown_
+  commentId: Overload:SteelEngine.Lua.Input.Event_OnKeyDown
+  isSpec: "True"
+  fullName: SteelEngine.Lua.Input.Event_OnKeyDown
+  nameWithType: Input.Event_OnKeyDown
+- uid: SteelEngine.Lua.Input.Event_OnKeyUp(OpenTK.Windowing.GraphicsLibraryFramework.Keys)
+  name: Event_OnKeyUp(Keys)
+  href: api/SteelEngine.Lua.Input.html#SteelEngine_Lua_Input_Event_OnKeyUp_OpenTK_Windowing_GraphicsLibraryFramework_Keys_
+  commentId: M:SteelEngine.Lua.Input.Event_OnKeyUp(OpenTK.Windowing.GraphicsLibraryFramework.Keys)
+  fullName: SteelEngine.Lua.Input.Event_OnKeyUp(OpenTK.Windowing.GraphicsLibraryFramework.Keys)
+  nameWithType: Input.Event_OnKeyUp(Keys)
+- uid: SteelEngine.Lua.Input.Event_OnKeyUp*
+  name: Event_OnKeyUp
+  href: api/SteelEngine.Lua.Input.html#SteelEngine_Lua_Input_Event_OnKeyUp_
+  commentId: Overload:SteelEngine.Lua.Input.Event_OnKeyUp
+  isSpec: "True"
+  fullName: SteelEngine.Lua.Input.Event_OnKeyUp
+  nameWithType: Input.Event_OnKeyUp
+- uid: SteelEngine.Lua.Input.Event_OnMouseDown(OpenTK.Windowing.GraphicsLibraryFramework.MouseButton)
+  name: Event_OnMouseDown(MouseButton)
+  href: api/SteelEngine.Lua.Input.html#SteelEngine_Lua_Input_Event_OnMouseDown_OpenTK_Windowing_GraphicsLibraryFramework_MouseButton_
+  commentId: M:SteelEngine.Lua.Input.Event_OnMouseDown(OpenTK.Windowing.GraphicsLibraryFramework.MouseButton)
+  fullName: SteelEngine.Lua.Input.Event_OnMouseDown(OpenTK.Windowing.GraphicsLibraryFramework.MouseButton)
+  nameWithType: Input.Event_OnMouseDown(MouseButton)
+- uid: SteelEngine.Lua.Input.Event_OnMouseDown*
+  name: Event_OnMouseDown
+  href: api/SteelEngine.Lua.Input.html#SteelEngine_Lua_Input_Event_OnMouseDown_
+  commentId: Overload:SteelEngine.Lua.Input.Event_OnMouseDown
+  isSpec: "True"
+  fullName: SteelEngine.Lua.Input.Event_OnMouseDown
+  nameWithType: Input.Event_OnMouseDown
+- uid: SteelEngine.Lua.Input.Event_OnMouseMove(SteelEngine.Lua.Vector2,SteelEngine.Lua.Vector2)
+  name: Event_OnMouseMove(Vector2, Vector2)
+  href: api/SteelEngine.Lua.Input.html#SteelEngine_Lua_Input_Event_OnMouseMove_SteelEngine_Lua_Vector2_SteelEngine_Lua_Vector2_
+  commentId: M:SteelEngine.Lua.Input.Event_OnMouseMove(SteelEngine.Lua.Vector2,SteelEngine.Lua.Vector2)
+  fullName: SteelEngine.Lua.Input.Event_OnMouseMove(SteelEngine.Lua.Vector2, SteelEngine.Lua.Vector2)
+  nameWithType: Input.Event_OnMouseMove(Vector2, Vector2)
+- uid: SteelEngine.Lua.Input.Event_OnMouseMove*
+  name: Event_OnMouseMove
+  href: api/SteelEngine.Lua.Input.html#SteelEngine_Lua_Input_Event_OnMouseMove_
+  commentId: Overload:SteelEngine.Lua.Input.Event_OnMouseMove
+  isSpec: "True"
+  fullName: SteelEngine.Lua.Input.Event_OnMouseMove
+  nameWithType: Input.Event_OnMouseMove
+- uid: SteelEngine.Lua.Input.Event_OnMouseUp(OpenTK.Windowing.GraphicsLibraryFramework.MouseButton)
+  name: Event_OnMouseUp(MouseButton)
+  href: api/SteelEngine.Lua.Input.html#SteelEngine_Lua_Input_Event_OnMouseUp_OpenTK_Windowing_GraphicsLibraryFramework_MouseButton_
+  commentId: M:SteelEngine.Lua.Input.Event_OnMouseUp(OpenTK.Windowing.GraphicsLibraryFramework.MouseButton)
+  fullName: SteelEngine.Lua.Input.Event_OnMouseUp(OpenTK.Windowing.GraphicsLibraryFramework.MouseButton)
+  nameWithType: Input.Event_OnMouseUp(MouseButton)
+- uid: SteelEngine.Lua.Input.Event_OnMouseUp*
+  name: Event_OnMouseUp
+  href: api/SteelEngine.Lua.Input.html#SteelEngine_Lua_Input_Event_OnMouseUp_
+  commentId: Overload:SteelEngine.Lua.Input.Event_OnMouseUp
+  isSpec: "True"
+  fullName: SteelEngine.Lua.Input.Event_OnMouseUp
+  nameWithType: Input.Event_OnMouseUp
+- uid: SteelEngine.Lua.Input.Event_OnMouseWheel(System.Single,System.Single)
+  name: Event_OnMouseWheel(float, float)
+  href: api/SteelEngine.Lua.Input.html#SteelEngine_Lua_Input_Event_OnMouseWheel_System_Single_System_Single_
+  commentId: M:SteelEngine.Lua.Input.Event_OnMouseWheel(System.Single,System.Single)
+  name.vb: Event_OnMouseWheel(Single, Single)
+  fullName: SteelEngine.Lua.Input.Event_OnMouseWheel(float, float)
+  fullName.vb: SteelEngine.Lua.Input.Event_OnMouseWheel(Single, Single)
+  nameWithType: Input.Event_OnMouseWheel(float, float)
+  nameWithType.vb: Input.Event_OnMouseWheel(Single, Single)
+- uid: SteelEngine.Lua.Input.Event_OnMouseWheel*
+  name: Event_OnMouseWheel
+  href: api/SteelEngine.Lua.Input.html#SteelEngine_Lua_Input_Event_OnMouseWheel_
+  commentId: Overload:SteelEngine.Lua.Input.Event_OnMouseWheel
+  isSpec: "True"
+  fullName: SteelEngine.Lua.Input.Event_OnMouseWheel
+  nameWithType: Input.Event_OnMouseWheel
+- uid: SteelEngine.Lua.Input.GetKey(System.Int32)
+  name: GetKey(int)
+  href: api/SteelEngine.Lua.Input.html#SteelEngine_Lua_Input_GetKey_System_Int32_
+  commentId: M:SteelEngine.Lua.Input.GetKey(System.Int32)
+  name.vb: GetKey(Integer)
+  fullName: SteelEngine.Lua.Input.GetKey(int)
+  fullName.vb: SteelEngine.Lua.Input.GetKey(Integer)
+  nameWithType: Input.GetKey(int)
+  nameWithType.vb: Input.GetKey(Integer)
+- uid: SteelEngine.Lua.Input.GetKey*
+  name: GetKey
+  href: api/SteelEngine.Lua.Input.html#SteelEngine_Lua_Input_GetKey_
+  commentId: Overload:SteelEngine.Lua.Input.GetKey
+  isSpec: "True"
+  fullName: SteelEngine.Lua.Input.GetKey
+  nameWithType: Input.GetKey
+- uid: SteelEngine.Lua.Input.GetKeyDown(System.Int32)
+  name: GetKeyDown(int)
+  href: api/SteelEngine.Lua.Input.html#SteelEngine_Lua_Input_GetKeyDown_System_Int32_
+  commentId: M:SteelEngine.Lua.Input.GetKeyDown(System.Int32)
+  name.vb: GetKeyDown(Integer)
+  fullName: SteelEngine.Lua.Input.GetKeyDown(int)
+  fullName.vb: SteelEngine.Lua.Input.GetKeyDown(Integer)
+  nameWithType: Input.GetKeyDown(int)
+  nameWithType.vb: Input.GetKeyDown(Integer)
+- uid: SteelEngine.Lua.Input.GetKeyDown*
+  name: GetKeyDown
+  href: api/SteelEngine.Lua.Input.html#SteelEngine_Lua_Input_GetKeyDown_
+  commentId: Overload:SteelEngine.Lua.Input.GetKeyDown
+  isSpec: "True"
+  fullName: SteelEngine.Lua.Input.GetKeyDown
+  nameWithType: Input.GetKeyDown
+- uid: SteelEngine.Lua.Input.GetMouse(System.Int32)
+  name: GetMouse(int)
+  href: api/SteelEngine.Lua.Input.html#SteelEngine_Lua_Input_GetMouse_System_Int32_
+  commentId: M:SteelEngine.Lua.Input.GetMouse(System.Int32)
+  name.vb: GetMouse(Integer)
+  fullName: SteelEngine.Lua.Input.GetMouse(int)
+  fullName.vb: SteelEngine.Lua.Input.GetMouse(Integer)
+  nameWithType: Input.GetMouse(int)
+  nameWithType.vb: Input.GetMouse(Integer)
+- uid: SteelEngine.Lua.Input.GetMouse*
+  name: GetMouse
+  href: api/SteelEngine.Lua.Input.html#SteelEngine_Lua_Input_GetMouse_
+  commentId: Overload:SteelEngine.Lua.Input.GetMouse
+  isSpec: "True"
+  fullName: SteelEngine.Lua.Input.GetMouse
+  nameWithType: Input.GetMouse
+- uid: SteelEngine.Lua.Input.GetMouseDelta
+  name: GetMouseDelta()
+  href: api/SteelEngine.Lua.Input.html#SteelEngine_Lua_Input_GetMouseDelta
+  commentId: M:SteelEngine.Lua.Input.GetMouseDelta
+  fullName: SteelEngine.Lua.Input.GetMouseDelta()
+  nameWithType: Input.GetMouseDelta()
+- uid: SteelEngine.Lua.Input.GetMouseDelta*
+  name: GetMouseDelta
+  href: api/SteelEngine.Lua.Input.html#SteelEngine_Lua_Input_GetMouseDelta_
+  commentId: Overload:SteelEngine.Lua.Input.GetMouseDelta
+  isSpec: "True"
+  fullName: SteelEngine.Lua.Input.GetMouseDelta
+  nameWithType: Input.GetMouseDelta
+- uid: SteelEngine.Lua.Input.GetMouseDown(System.Int32)
+  name: GetMouseDown(int)
+  href: api/SteelEngine.Lua.Input.html#SteelEngine_Lua_Input_GetMouseDown_System_Int32_
+  commentId: M:SteelEngine.Lua.Input.GetMouseDown(System.Int32)
+  name.vb: GetMouseDown(Integer)
+  fullName: SteelEngine.Lua.Input.GetMouseDown(int)
+  fullName.vb: SteelEngine.Lua.Input.GetMouseDown(Integer)
+  nameWithType: Input.GetMouseDown(int)
+  nameWithType.vb: Input.GetMouseDown(Integer)
+- uid: SteelEngine.Lua.Input.GetMouseDown*
+  name: GetMouseDown
+  href: api/SteelEngine.Lua.Input.html#SteelEngine_Lua_Input_GetMouseDown_
+  commentId: Overload:SteelEngine.Lua.Input.GetMouseDown
+  isSpec: "True"
+  fullName: SteelEngine.Lua.Input.GetMouseDown
+  nameWithType: Input.GetMouseDown
+- uid: SteelEngine.Lua.Input.GetMousePosition
+  name: GetMousePosition()
+  href: api/SteelEngine.Lua.Input.html#SteelEngine_Lua_Input_GetMousePosition
+  commentId: M:SteelEngine.Lua.Input.GetMousePosition
+  fullName: SteelEngine.Lua.Input.GetMousePosition()
+  nameWithType: Input.GetMousePosition()
+- uid: SteelEngine.Lua.Input.GetMousePosition*
+  name: GetMousePosition
+  href: api/SteelEngine.Lua.Input.html#SteelEngine_Lua_Input_GetMousePosition_
+  commentId: Overload:SteelEngine.Lua.Input.GetMousePosition
+  isSpec: "True"
+  fullName: SteelEngine.Lua.Input.GetMousePosition
+  nameWithType: Input.GetMousePosition
+- uid: SteelEngine.Lua.Input.GetScrollOffset
+  name: GetScrollOffset()
+  href: api/SteelEngine.Lua.Input.html#SteelEngine_Lua_Input_GetScrollOffset
+  commentId: M:SteelEngine.Lua.Input.GetScrollOffset
+  fullName: SteelEngine.Lua.Input.GetScrollOffset()
+  nameWithType: Input.GetScrollOffset()
+- uid: SteelEngine.Lua.Input.GetScrollOffset*
+  name: GetScrollOffset
+  href: api/SteelEngine.Lua.Input.html#SteelEngine_Lua_Input_GetScrollOffset_
+  commentId: Overload:SteelEngine.Lua.Input.GetScrollOffset
+  isSpec: "True"
+  fullName: SteelEngine.Lua.Input.GetScrollOffset
+  nameWithType: Input.GetScrollOffset
+- uid: SteelEngine.Lua.Input.Update
+  name: Update()
+  href: api/SteelEngine.Lua.Input.html#SteelEngine_Lua_Input_Update
+  commentId: M:SteelEngine.Lua.Input.Update
+  fullName: SteelEngine.Lua.Input.Update()
+  nameWithType: Input.Update()
+- uid: SteelEngine.Lua.Input.Update*
+  name: Update
+  href: api/SteelEngine.Lua.Input.html#SteelEngine_Lua_Input_Update_
+  commentId: Overload:SteelEngine.Lua.Input.Update
+  isSpec: "True"
+  fullName: SteelEngine.Lua.Input.Update
+  nameWithType: Input.Update
 - uid: SteelEngine.Lua.KeyCode
   name: KeyCode
   href: api/SteelEngine.Lua.KeyCode.html
@@ -1050,6 +1240,52 @@ references:
   isSpec: "True"
   fullName: SteelEngine.Lua.Time.Initialize
   nameWithType: Time.Initialize
+- uid: SteelEngine.Lua.Vector2
+  name: Vector2
+  href: api/SteelEngine.Lua.Vector2.html
+  commentId: T:SteelEngine.Lua.Vector2
+  fullName: SteelEngine.Lua.Vector2
+  nameWithType: Vector2
+- uid: SteelEngine.Lua.Vector2.#ctor
+  name: Vector2()
+  href: api/SteelEngine.Lua.Vector2.html#SteelEngine_Lua_Vector2__ctor
+  commentId: M:SteelEngine.Lua.Vector2.#ctor
+  name.vb: New()
+  fullName: SteelEngine.Lua.Vector2.Vector2()
+  fullName.vb: SteelEngine.Lua.Vector2.New()
+  nameWithType: Vector2.Vector2()
+  nameWithType.vb: Vector2.New()
+- uid: SteelEngine.Lua.Vector2.#ctor(System.Single,System.Single)
+  name: Vector2(float, float)
+  href: api/SteelEngine.Lua.Vector2.html#SteelEngine_Lua_Vector2__ctor_System_Single_System_Single_
+  commentId: M:SteelEngine.Lua.Vector2.#ctor(System.Single,System.Single)
+  name.vb: New(Single, Single)
+  fullName: SteelEngine.Lua.Vector2.Vector2(float, float)
+  fullName.vb: SteelEngine.Lua.Vector2.New(Single, Single)
+  nameWithType: Vector2.Vector2(float, float)
+  nameWithType.vb: Vector2.New(Single, Single)
+- uid: SteelEngine.Lua.Vector2.#ctor*
+  name: Vector2
+  href: api/SteelEngine.Lua.Vector2.html#SteelEngine_Lua_Vector2__ctor_
+  commentId: Overload:SteelEngine.Lua.Vector2.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: SteelEngine.Lua.Vector2.Vector2
+  fullName.vb: SteelEngine.Lua.Vector2.New
+  nameWithType: Vector2.Vector2
+  nameWithType.vb: Vector2.New
+- uid: SteelEngine.Lua.Vector2.x
+  name: x
+  href: api/SteelEngine.Lua.Vector2.html#SteelEngine_Lua_Vector2_x
+  commentId: F:SteelEngine.Lua.Vector2.x
+  fullName: SteelEngine.Lua.Vector2.x
+  nameWithType: Vector2.x
+- uid: SteelEngine.Lua.Vector2.y
+  name: y
+  href: api/SteelEngine.Lua.Vector2.html#SteelEngine_Lua_Vector2_y
+  commentId: F:SteelEngine.Lua.Vector2.y
+  fullName: SteelEngine.Lua.Vector2.y
+  nameWithType: Vector2.y
 - uid: SteelEngine.Lua.Window
   name: Window
   href: api/SteelEngine.Lua.Window.html
