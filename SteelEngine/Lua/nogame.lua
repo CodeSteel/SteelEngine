@@ -20,8 +20,8 @@ end
 local lerpPos = 0
 
 function Steel.Render()
-	lerpPos = Lerp(0, Clamp(math.cos(Time.GetTime() * 2) * ScrW() + (ScrW() / 2), 100, ScrW() - 100), Time.GetTime() * 2)
+	lerpPos = Lerp(lerpPos, Input.GetMousePosition().x, Time.GetTime() * 2)
 
-	Draw.DrawRectangle(0, ScrH() * 0.5 - 50, ScrW(), 100, Color(30, 70, 200));
+	Draw.DrawRectangle(0, ScrH() * 0.5 - 50, ScrW(), ScrH() - (ScrH() * 0.5 - 50), Color(30, 70, 200));
 	Draw.DrawCircle(lerpPos, ScrH() * 0.5 - 50, 100, Color(200, 255, 50), 32)
 end

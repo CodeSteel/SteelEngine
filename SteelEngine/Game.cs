@@ -1,5 +1,4 @@
 ﻿using OpenTK.Graphics.OpenGL;
-using OpenTK.Mathematics;
 using OpenTK.Windowing.Common;
 using OpenTK.Windowing.Desktop;
 using SteelEngine.Lua;
@@ -87,6 +86,7 @@ namespace SteelEngine
             SetWindowSize(e.Width, e.Height);
         }
 
+        #region Input  Events
         protected override void OnKeyDown(KeyboardKeyEventArgs e)
         {
             base.OnKeyDown(e);
@@ -98,5 +98,31 @@ namespace SteelEngine
             base.OnKeyUp(e);
             Input.Event_OnKeyUp(e.Key);
         }
+
+        protected override void OnMouseMove(MouseMoveEventArgs e)
+        {
+            base.OnMouseMove(e);
+            Input.Event_OnMouseMove(new Lua.Vector2(e.X, e.Y), new Lua.Vector2(e.DeltaX, e.DeltaY));
+        }
+
+        protected override void OnMouseDown(MouseButtonEventArgs e)
+        {
+            base.OnMouseDown(e);
+            Input.Event_OnMouseDown(e.Button);
+        }
+
+        protected override void OnMouseUp(MouseButtonEventArgs e)
+        {
+            base.OnMouseUp(e);
+            Input.Event_OnMouseUp(e.Button);
+        }
+
+        protected override void OnMouseWheel(MouseWheelEventArgs e)
+        {
+            base.OnMouseWheel(e);
+            Input.Event_OnMouseWheel(e.OffsetX, e.OffsetY);
+        }
+
+        #endregion
     }
 }

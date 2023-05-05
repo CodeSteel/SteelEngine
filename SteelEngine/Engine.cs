@@ -1,6 +1,4 @@
-﻿using NLua;
-using NLua.Extensions;
-using SteelEngine.Lua;
+﻿using SteelEngine.Lua;
 
 namespace SteelEngine
 {

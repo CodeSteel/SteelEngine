@@ -10,7 +10,7 @@ jobs:
     runs-on: windows-latest
 
     steps:
-      - name: Checkout repository
+      - name: Checkout Repository
         uses: actions/checkout@v2
 
       - name: Setup .NET Core
@@ -18,15 +18,15 @@ jobs:
         with:
           dotnet-version: "6.0.x"
 
-      - name: Build and publish project
+      - name: Build Project
         run: |
           dotnet publish --configuration Release --output build_output --runtime win-x64 --self-contained true
 
-      - name: Create zip archive
+      - name: Create Zip Archive
         run: |
           Compress-Archive -Path build_output/* -DestinationPath build_output.zip
 
-      - name: Create release
+      - name: Create Release
         id: create_release
         uses: actions/create-release@v1
         env:
@@ -37,7 +37,7 @@ jobs:
           draft: false
           prerelease: false
 
-      - name: Upload built exe
+      - name: Upload Release
         uses: actions/upload-release-asset@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

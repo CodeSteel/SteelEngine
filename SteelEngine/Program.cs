@@ -15,14 +15,11 @@ namespace SteelEngine
                 Version = "1.0"
             };
 
-            string gamePath;
+            string gamePath = ".";
             if (args.Length > 0 && Directory.Exists(args[0]))
-            {
                 gamePath = args[0];
-            } else
-            {
+            else {
                 Console.WriteLine("Invalid game directory provided! Running with no-game!");
-                gamePath = ".";
             }
 
             new Engine(properties, gamePath);

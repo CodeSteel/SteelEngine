@@ -1,10 +1,7 @@
-﻿using OpenTK.Graphics.OpenGL;
-using OpenTK.Mathematics;
-
-namespace SteelEngine.Lua
+﻿namespace SteelEngine.Lua
 {
     /// <summary>
-    /// This class is used for sending graphics to the renderer.
+    /// Used for sending graphics to the renderer.
     /// </summary>
     public static class Draw
     {
@@ -49,8 +46,8 @@ namespace SteelEngine.Lua
                 for (int i = 0; i <= segmentsPerCorner; i++)
                 {
                     float angle = startAngle + (float)i / segmentsPerCorner * MathF.PI / 2;
-                    float x = center.X + roundness * MathF.Cos(angle);
-                    float y = center.Y + roundness * MathF.Sin(angle);
+                    float x = center.x + roundness * MathF.Cos(angle);
+                    float y = center.y + roundness * MathF.Sin(angle);
                     vertices.Add(x);
                     vertices.Add(y);
                 }

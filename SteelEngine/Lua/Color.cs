@@ -7,9 +7,24 @@ namespace SteelEngine.Lua
     /// </summary>
     public class Color
     {
+        /// <summary>
+        /// The Red channel.
+        /// </summary>
         public int r;
+
+        /// <summary>
+        /// The Green channel.
+        /// </summary>
         public int g;
+
+        /// <summary>
+        /// The Blue channel.
+        /// </summary>
         public int b;
+
+        /// <summary>
+        /// The Alpha channel.
+        /// </summary>
         public int a;
 
         /// <summary>
@@ -52,11 +67,10 @@ namespace SteelEngine.Lua
             return new Color(r, g, b, _a);
         }
 
-        public (int, int, int, int) Value()
-        {
-            return (r, g, b, a);
-        }
-
+        /// <summary>
+        /// Returns in OpenTK.Mathematics.Color form
+        /// </summary>
+        /// <returns></returns>
         public Color4 ToColor4()
         {
             return new Color4(r / 255.0f, g / 255.0f, b / 255.0f, a / 255.0f);

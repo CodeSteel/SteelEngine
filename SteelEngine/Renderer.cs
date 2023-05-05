@@ -1,6 +1,5 @@
 ﻿using OpenTK.Graphics.OpenGL;
 using OpenTK.Mathematics;
-using SteelEngine.Lua;
 
 namespace SteelEngine
 {
@@ -24,17 +23,24 @@ namespace SteelEngine
             GL.BindBuffer(BufferTarget.ArrayBuffer, VertexBufferObject);
 
             // Initialize shader program
-            ShaderProgram = new Shader("shaders/shader.vert", "shaders/shader.frag");
+            ShaderProgram = new Shader("resources/shaders/shader.vert", "resources/shaders/shader.frag");
             ShaderProgram.Use();
 
             _uProjectionLocation = GL.GetUniformLocation(ShaderProgram.Handle, "uProjection");
             _uModelViewLocation = GL.GetUniformLocation(ShaderProgram.Handle, "uModelView");
 
+
             // Initialize the projection matrix
             SetupView(screenWidth, screenHeight);
         }
 
-        public static void DrawPoly(float[] vertices, Color color)
+
+        /// <summary>
+        /// Draws a polygon to the screen
+        /// </summary>
+        /// <param name="vertices"></param>
+        /// <param name="color"></param>
+        public static void DrawPoly(float[] vertices, Lua.Color color)
         {
             // Normalize color components
             float r = color.r / 255.0f;

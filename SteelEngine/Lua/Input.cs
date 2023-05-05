@@ -2,39 +2,31 @@
 
 namespace SteelEngine.Lua
 {
-    internal class Input
+    /// <summary>
+    /// Used for handling user input.
+    /// </summary>
+    public static class Input
     {
-        private static List<Keys> currentState = new List<Keys>();
-        private static List<Keys> previousState = new List<Keys>();
+        private static List<Keys> currentKeyState = new List<Keys>();
+        private static List<Keys> previousKeyState = new List<Keys>();
+
+        private static List<MouseButton> currentMouseState = new List<MouseButton>();
+        private static List<MouseButton> previousMouseState = new List<MouseButton>();
+
+        private static Vector2 mousePosition = new Vector2();
+        private static Vector2 mouseDelta = new Vector2();
+        private static Vector2 scrollWheelOffset = new Vector2();
 
         /// <summary>
         /// Called every frame to update the input state.
         /// </summary>
         public static void Update()
         {
-            previousState.Clear();
-            for (int i = 0; i < currentState.Count; i++)
+            previousKeyState.Clear();
+            for (int i = 0; i < currentKeyState.Count; i++)
             {
-                previousState.Add(currentState[i]);
+                previousKeyState.Add(currentKeyState[i]);
             }
-        }
-
-        /// <summary>
-        /// This method is called when a key is pressed.
-        /// </summary>
-        /// <param name="key"></param>
-        public static void Event_OnKeyDown(Keys key)
-        {
-            currentState.Add(key);
-        }
-
-        /// <summary>
-        /// This method is called when a key is released.
-        /// </summary>
-        /// <param name="key"></param>
-        public static void Event_OnKeyUp(Keys key)
-        {
-            currentState.Remove(key);
         }
 
         /// <summary>
@@ -44,7 +36,7 @@ namespace SteelEngine.Lua
         /// <returns></returns>
         public static bool GetKey(int key)
         {
-            if (currentState.Contains((Keys)key))
+            if (currentKeyState.Contains((Keys)key))
             {
                 return true;
             }
@@ -59,12 +51,126 @@ namespace SteelEngine.Lua
         /// <returns></returns>
         public static bool GetKeyDown(int key)
         {
-            if (currentState.Contains((Keys)key) && !previousState.Contains((Keys)key))
+            if (currentKeyState.Contains((Keys)key) && !previousKeyState.Contains((Keys)key))
             {
                 return true;
             }
 
             return false;
+        }
+
+        /// <summary>
+        /// Returns the mouse position.
+        /// </summary>
+        /// <returns></returns>
+        public static Vector2 GetMousePosition()
+        {
+            return mousePosition;
+        }
+
+        /// <summary>
+        /// Returns the mouse delta.
+        /// </summary>
+        /// <returns></returns>
+        public static Vector2 GetMouseDelta()
+        {
+            return mouseDelta;
+        }
+
+        /// <summary>
+        /// Returns the scrollwheel's scroll offset.
+        /// </summary>
+        /// <returns></returns>
+        public static Vector2 GetScrollOffset()
+        {
+            return scrollWheelOffset;
+        }
+
+        /// <summary>
+        /// Returns if the mouse button is currently down
+        /// </summary>
+        /// <param name="button"></param>
+        /// <returns></returns>
+        public static bool GetMouse(int button)
+        {
+            if (currentMouseState.Contains((MouseButton)button))
+            {
+                return true;
+            }
+
+            return false;
+        }
+
+        /// <summary>
+        /// Returns if the mouse button was pressed.
+        /// </summary>
+        /// <param name="button"></param>
+        /// <returns></returns>
+        public static bool GetMouseDown(int button)
+        {
+            if (currentMouseState.Contains((MouseButton)button) && !previousMouseState.Contains((MouseButton)button))
+            {
+                return true;
+            }
+
+            return false;
+        }
+
+        /// <summary>
+        /// This method is called when a key is pressed.
+        /// </summary>
+        /// <param name="key"></param>
+        public static void Event_OnKeyDown(Keys key)
+        {
+            currentKeyState.Add(key);
+        }
+
+        /// <summary>
+        /// This method is called when a key is released.
+        /// </summary>
+        /// <param name="key"></param>
+        public static void Event_OnKeyUp(Keys key)
+        {
+            currentKeyState.Remove(key);
+        }
+
+        /// <summary>
+        /// This event is called when the mouse is moved.
+        /// </summary>
+        /// <param name="position"></param>
+        /// <param name="delta"></param>
+        public static void Event_OnMouseMove(Vector2 position, Vector2 delta)
+        {
+            mousePosition = position;
+            mouseDelta = delta;
+        }
+
+        /// <summary>
+        /// This event is called when the mouse is down.
+        /// </summary>
+        /// <param name="button"></param>
+        public static void Event_OnMouseDown(MouseButton button)
+        {
+            currentMouseState.Add(button);
+        }
+
+        /// <summary>
+        /// This event is called when the mouse is up.
+        /// </summary>
+        /// <param name="button"></param>
+        public static void Event_OnMouseUp(MouseButton button)
+        {
+            currentMouseState.Remove(button);
+        }
+
+        /// <summary>
+        /// This event is called when the mouse wheel is moved.
+        /// </summary>
+        /// <param name="x"></param>
+        /// <param name="y"></param>
+        public static void Event_OnMouseWheel(float x, float y)
+        {
+            scrollWheelOffset = new Vector2(x, y);
         }
     }
 
