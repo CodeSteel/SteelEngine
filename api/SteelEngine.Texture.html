@@ -83,7 +83,7 @@
 
   <h1 id="SteelEngine_Texture" data-uid="SteelEngine.Texture" class="text-break">
     Class Texture
-  <a class="header-action link-secondary" title="View source" href="https://github.com/CodeSteel/SteelEngine/blob/main/SteelEngine/Texture.cs/#L10"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/CodeSteel/SteelEngine/blob/main/SteelEngine/Texture.cs/#L11"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -150,7 +150,7 @@
 
   <h3 id="SteelEngine_Texture__ctor_System_Int32_" data-uid="SteelEngine.Texture.#ctor(System.Int32)">
   Texture(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/CodeSteel/SteelEngine/blob/main/SteelEngine/Texture.cs/#L55"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/CodeSteel/SteelEngine/blob/main/SteelEngine/Texture.cs/#L110"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -179,16 +179,16 @@
 
   <a id="SteelEngine_Texture__ctor_" data-uid="SteelEngine.Texture.#ctor*"></a>
 
-  <h3 id="SteelEngine_Texture__ctor_System_Int32_System_Byte___" data-uid="SteelEngine.Texture.#ctor(System.Int32,System.Byte[])">
-  Texture(int, byte[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/CodeSteel/SteelEngine/blob/main/SteelEngine/Texture.cs/#L60"><i class="bi bi-code-slash"></i></a>
+  <h3 id="SteelEngine_Texture__ctor_System_Int32_System_Byte___System_Int32_System_Int32_" data-uid="SteelEngine.Texture.#ctor(System.Int32,System.Byte[],System.Int32,System.Int32)">
+  Texture(int, byte[], int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/CodeSteel/SteelEngine/blob/main/SteelEngine/Texture.cs/#L115"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Texture(int glHandle, byte[] data)</code></pre>
+    <pre><code class="lang-csharp hljs">public Texture(int glHandle, byte[] data, int width, int height)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -196,6 +196,10 @@
     <dt><code>glHandle</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
     <dd></dd>
     <dt><code>data</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+    <dt><code>width</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>height</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
     <dd></dd>
   </dl>
 
@@ -214,7 +218,7 @@
 
   <h3 id="SteelEngine_Texture__ctor_System_Int32_System_Int32_System_Byte___" data-uid="SteelEngine.Texture.#ctor(System.Int32,System.Int32,System.Byte[])">
   Texture(int, int, byte[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/CodeSteel/SteelEngine/blob/main/SteelEngine/Texture.cs/#L66"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/CodeSteel/SteelEngine/blob/main/SteelEngine/Texture.cs/#L123"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -252,7 +256,7 @@
 
   <h3 id="SteelEngine_Texture_Data" data-uid="SteelEngine.Texture.Data">
   Data
-  <a class="header-action link-secondary" title="View source" href="https://github.com/CodeSteel/SteelEngine/blob/main/SteelEngine/Texture.cs/#L13"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/CodeSteel/SteelEngine/blob/main/SteelEngine/Texture.cs/#L14"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -282,7 +286,7 @@
 
   <h3 id="SteelEngine_Texture_Handle" data-uid="SteelEngine.Texture.Handle">
   Handle
-  <a class="header-action link-secondary" title="View source" href="https://github.com/CodeSteel/SteelEngine/blob/main/SteelEngine/Texture.cs/#L12"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/CodeSteel/SteelEngine/blob/main/SteelEngine/Texture.cs/#L13"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -290,6 +294,66 @@
 
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public readonly int Handle</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SteelEngine_Texture_Height" data-uid="SteelEngine.Texture.Height">
+  Height
+  <a class="header-action link-secondary" title="View source" href="https://github.com/CodeSteel/SteelEngine/blob/main/SteelEngine/Texture.cs/#L16"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly int Height</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SteelEngine_Texture_Width" data-uid="SteelEngine.Texture.Width">
+  Width
+  <a class="header-action link-secondary" title="View source" href="https://github.com/CodeSteel/SteelEngine/blob/main/SteelEngine/Texture.cs/#L15"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly int Width</code></pre>
   </div>
 
 
@@ -317,10 +381,11 @@
 
   <h3 id="SteelEngine_Texture_FromBitmap_System_Drawing_Bitmap_" data-uid="SteelEngine.Texture.FromBitmap(System.Drawing.Bitmap)">
   FromBitmap(Bitmap)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/CodeSteel/SteelEngine/blob/main/SteelEngine/Texture.cs/#L40"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/CodeSteel/SteelEngine/blob/main/SteelEngine/Texture.cs/#L84"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Creates a texture from a bitmap</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -353,10 +418,11 @@
 
   <h3 id="SteelEngine_Texture_LoadFromFile_System_String_" data-uid="SteelEngine.Texture.LoadFromFile(System.String)">
   LoadFromFile(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/CodeSteel/SteelEngine/blob/main/SteelEngine/Texture.cs/#L15"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/CodeSteel/SteelEngine/blob/main/SteelEngine/Texture.cs/#L23"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Creates a texture from a file</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -389,10 +455,11 @@
 
   <h3 id="SteelEngine_Texture_Use_OpenTK_Graphics_OpenGL4_TextureUnit_" data-uid="SteelEngine.Texture.Use(OpenTK.Graphics.OpenGL4.TextureUnit)">
   Use(TextureUnit)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/CodeSteel/SteelEngine/blob/main/SteelEngine/Texture.cs/#L84"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/CodeSteel/SteelEngine/blob/main/SteelEngine/Texture.cs/#L155"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Uses the Texture in the current GL scope.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -420,7 +487,7 @@
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/CodeSteel/SteelEngine/blob/main/SteelEngine/Texture.cs/#L10" class="edit-link">Edit this page</a>
+          <a href="https://github.com/CodeSteel/SteelEngine/blob/main/SteelEngine/Texture.cs/#L11" class="edit-link">Edit this page</a>
         </div>
 
         

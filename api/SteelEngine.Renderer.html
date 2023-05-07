@@ -83,7 +83,7 @@
 
   <h1 id="SteelEngine_Renderer" data-uid="SteelEngine.Renderer" class="text-break">
     Class Renderer
-  <a class="header-action link-secondary" title="View source" href="https://github.com/CodeSteel/SteelEngine/blob/main/SteelEngine/Renderer.cs/#L10"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/CodeSteel/SteelEngine/blob/main/SteelEngine/Renderer.cs/#L11"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -183,9 +183,9 @@
 
   <a id="SteelEngine_Renderer_DrawText_" data-uid="SteelEngine.Renderer.DrawText*"></a>
 
-  <h3 id="SteelEngine_Renderer_DrawText_System_String_System_Drawing_Font_System_Drawing_Point_SteelEngine_Lua_Color_" data-uid="SteelEngine.Renderer.DrawText(System.String,System.Drawing.Font,System.Drawing.Point,SteelEngine.Lua.Color)">
-  DrawText(string, Font, Point, Color?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/CodeSteel/SteelEngine/blob/main/SteelEngine/Renderer.cs/#L157"><i class="bi bi-code-slash"></i></a>
+  <h3 id="SteelEngine_Renderer_DrawText_System_String_System_Drawing_Font_SteelEngine_Lua_Vector2_SteelEngine_Lua_Color_" data-uid="SteelEngine.Renderer.DrawText(System.String,System.Drawing.Font,SteelEngine.Lua.Vector2,SteelEngine.Lua.Color)">
+  DrawText(string, Font, Vector2, Color?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/CodeSteel/SteelEngine/blob/main/SteelEngine/Renderer.cs/#L163"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Renders a text to the screen.</p>
@@ -193,7 +193,7 @@
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void DrawText(string text, Font font, Point point, Color? color)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void DrawText(string text, Font font, Vector2 position, Color? color)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -202,7 +202,7 @@
     <dd></dd>
     <dt><code>font</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.drawing.font">Font</a></dt>
     <dd></dd>
-    <dt><code>point</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.drawing.point">Point</a></dt>
+    <dt><code>position</code> <a class="xref" href="SteelEngine.Lua.Vector2.html">Vector2</a></dt>
     <dd></dd>
     <dt><code>color</code> <a class="xref" href="SteelEngine.Lua.Color.html">Color</a></dt>
     <dd></dd>
@@ -223,7 +223,7 @@
 
   <h3 id="SteelEngine_Renderer_DrawTexturedPoly_System_Single___System_Single___SteelEngine_Texture_SteelEngine_Lua_Color_" data-uid="SteelEngine.Renderer.DrawTexturedPoly(System.Single[],System.Single[],SteelEngine.Texture,SteelEngine.Lua.Color)">
   DrawTexturedPoly(float[], float[], Texture, Color?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/CodeSteel/SteelEngine/blob/main/SteelEngine/Renderer.cs/#L98"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/CodeSteel/SteelEngine/blob/main/SteelEngine/Renderer.cs/#L104"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Renders a textured polygon to the screen.</p>
@@ -261,7 +261,7 @@
 
   <h3 id="SteelEngine_Renderer_Event_OnWindowResize_System_Int32_System_Int32_" data-uid="SteelEngine.Renderer.Event_OnWindowResize(System.Int32,System.Int32)">
   Event_OnWindowResize(int, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/CodeSteel/SteelEngine/blob/main/SteelEngine/Renderer.cs/#L196"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/CodeSteel/SteelEngine/blob/main/SteelEngine/Renderer.cs/#L192"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>This event is called internally when the window is resized.</p>
@@ -295,7 +295,7 @@
 
   <h3 id="SteelEngine_Renderer_Initialize_System_Int32_System_Int32_" data-uid="SteelEngine.Renderer.Initialize(System.Int32,System.Int32)">
   Initialize(int, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/CodeSteel/SteelEngine/blob/main/SteelEngine/Renderer.cs/#L26"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/CodeSteel/SteelEngine/blob/main/SteelEngine/Renderer.cs/#L27"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Called internally to initialize the renderer.</p>
@@ -329,7 +329,7 @@
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/CodeSteel/SteelEngine/blob/main/SteelEngine/Renderer.cs/#L10" class="edit-link">Edit this page</a>
+          <a href="https://github.com/CodeSteel/SteelEngine/blob/main/SteelEngine/Renderer.cs/#L11" class="edit-link">Edit this page</a>
         </div>
 
         
