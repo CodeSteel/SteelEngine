@@ -1,4 +1,5 @@
 ﻿using SteelEngine.Lua;
+using System.ComponentModel;
 
 namespace SteelEngine
 {
@@ -36,11 +37,15 @@ namespace SteelEngine
 
     internal class Engine
     {
+        public static Engine instance;
+
         private Game window;
-        private NLua.Lua luaState;
+        public NLua.Lua luaState;
 
         public Engine(EngineProperties properties, string gameDirectory)
         {
+            instance = this;
+
             // initialize lua
             luaState = new NLua.Lua();
 
@@ -50,14 +55,16 @@ namespace SteelEngine
 
             string gamePath = File.Exists(mainLuaPath) ? mainLuaPath : noGamePath;
 
-            // load file
+            // prepare to load file
             luaState["WORKING_DIR"] = File.Exists(mainLuaPath) ? gameDirectory : ".";
             luaState.NewTable("Steel");
-            luaState.DoFile(gamePath);
 
             // load C# assembly
             luaState.LoadCLRPackage();
             luaState.DoString("import ('SteelEngine', 'SteelEngine.Lua')");
+
+            // load file
+            luaState.DoFile(gamePath);
 
             // Register all static methods in the Global class to the Lua state
             Type globalClassType = typeof(Global);
@@ -90,6 +97,10 @@ namespace SteelEngine
             Time.Initialize();
         }
 
+        private double _deltaTime;
+        private double _fpsTimer;
+        private int _fpsCounter;
+
         private void onUpdateFrame(float deltaTime)
         {
             // lua event
@@ -97,6 +108,20 @@ namespace SteelEngine
 
             // system calls
             Input.Update();
+
+
+            // Update FPS counter
+            _deltaTime = deltaTime;
+            _fpsTimer += deltaTime;
+            _fpsCounter++;
+
+            if (_fpsTimer >= 1.0) // If one second has passed
+            {
+                double fps = _fpsCounter / _fpsTimer;
+                Console.WriteLine("FPS: " + fps);
+                _fpsTimer = 0.0;
+                _fpsCounter = 0;
+            }
         }
 
         private void onRenderFrame()

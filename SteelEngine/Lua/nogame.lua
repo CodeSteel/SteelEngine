@@ -9,6 +9,10 @@ function Steel.Preload(ctx)
 end
 
 function Steel.Load()
+	--Time.CreateTimer("Cool Kids", 1, 0, function()
+	--	print("HAHAHAHA")
+		-- print(Time.TimerExists("Cool Kidsss"))
+	--end)
 end
 
 function Steel.Update(dt)
@@ -17,11 +21,20 @@ function Steel.Update(dt)
 	end
 end
 
+local numRectangles = 1000
 local lerpPos = 0
+local color = Color(255, 0,0)
+local startTime = Time.GetTime()
+
+local function testPerformance()
+    for i = 1, numRectangles do
+        lerpPos = Lerp(lerpPos, i / numRectangles, Time.GetDeltaTime() * 2)
+        color.r = math.floor(lerpPos * 255)
+        Draw.DrawRectangle(i, i, 10, 10, color)
+    end
+end
 
 function Steel.Render()
-	lerpPos = Lerp(lerpPos, Input.GetMousePosition().x, Time.GetTime() * 2)
+	testPerformance()
 
-	Draw.DrawRectangle(0, ScrH() * 0.5 - 50, ScrW(), ScrH() - (ScrH() * 0.5 - 50), Color(30, 70, 200));
-	Draw.DrawCircle(lerpPos, ScrH() * 0.5 - 50, 100, Color(200, 255, 50), 32)
 end
