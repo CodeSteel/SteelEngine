@@ -53,6 +53,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/SteelEngine.Lua.FontObject.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SteelEngine.Lua.FontObject.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/SteelEngine.Lua.Global.yml",
       "output": {
         ".html": {
@@ -157,6 +167,16 @@
       "output": {
         ".html": {
           "relative_path": "api/SteelEngine.SteelEngine.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SteelEngine.Texture.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SteelEngine.Texture.html"
         }
       },
       "version": ""

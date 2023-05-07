@@ -120,6 +120,19 @@ references:
   isSpec: "True"
   fullName: SteelEngine.Lua.Color.ToColor4
   nameWithType: Color.ToColor4
+- uid: SteelEngine.Lua.Color.White
+  name: White
+  href: api/SteelEngine.Lua.Color.html#SteelEngine_Lua_Color_White
+  commentId: P:SteelEngine.Lua.Color.White
+  fullName: SteelEngine.Lua.Color.White
+  nameWithType: Color.White
+- uid: SteelEngine.Lua.Color.White*
+  name: White
+  href: api/SteelEngine.Lua.Color.html#SteelEngine_Lua_Color_White_
+  commentId: Overload:SteelEngine.Lua.Color.White
+  isSpec: "True"
+  fullName: SteelEngine.Lua.Color.White
+  nameWithType: Color.White
 - uid: SteelEngine.Lua.Color.WithAlpha(System.Int32)
   name: WithAlpha(int)
   href: api/SteelEngine.Lua.Color.html#SteelEngine_Lua_Color_WithAlpha_System_Int32_
@@ -166,6 +179,38 @@ references:
   commentId: T:SteelEngine.Lua.Draw
   fullName: SteelEngine.Lua.Draw
   nameWithType: Draw
+- uid: SteelEngine.Lua.Draw.CreateFont(System.String,System.String,System.Int32)
+  name: CreateFont(string, string, int)
+  href: api/SteelEngine.Lua.Draw.html#SteelEngine_Lua_Draw_CreateFont_System_String_System_String_System_Int32_
+  commentId: M:SteelEngine.Lua.Draw.CreateFont(System.String,System.String,System.Int32)
+  name.vb: CreateFont(String, String, Integer)
+  fullName: SteelEngine.Lua.Draw.CreateFont(string, string, int)
+  fullName.vb: SteelEngine.Lua.Draw.CreateFont(String, String, Integer)
+  nameWithType: Draw.CreateFont(string, string, int)
+  nameWithType.vb: Draw.CreateFont(String, String, Integer)
+- uid: SteelEngine.Lua.Draw.CreateFont*
+  name: CreateFont
+  href: api/SteelEngine.Lua.Draw.html#SteelEngine_Lua_Draw_CreateFont_
+  commentId: Overload:SteelEngine.Lua.Draw.CreateFont
+  isSpec: "True"
+  fullName: SteelEngine.Lua.Draw.CreateFont
+  nameWithType: Draw.CreateFont
+- uid: SteelEngine.Lua.Draw.CreateTexture(System.String,System.String)
+  name: CreateTexture(string, string)
+  href: api/SteelEngine.Lua.Draw.html#SteelEngine_Lua_Draw_CreateTexture_System_String_System_String_
+  commentId: M:SteelEngine.Lua.Draw.CreateTexture(System.String,System.String)
+  name.vb: CreateTexture(String, String)
+  fullName: SteelEngine.Lua.Draw.CreateTexture(string, string)
+  fullName.vb: SteelEngine.Lua.Draw.CreateTexture(String, String)
+  nameWithType: Draw.CreateTexture(string, string)
+  nameWithType.vb: Draw.CreateTexture(String, String)
+- uid: SteelEngine.Lua.Draw.CreateTexture*
+  name: CreateTexture
+  href: api/SteelEngine.Lua.Draw.html#SteelEngine_Lua_Draw_CreateTexture_
+  commentId: Overload:SteelEngine.Lua.Draw.CreateTexture
+  isSpec: "True"
+  fullName: SteelEngine.Lua.Draw.CreateTexture
+  nameWithType: Draw.CreateTexture
 - uid: SteelEngine.Lua.Draw.DrawCircle(System.Single,System.Single,System.Single,SteelEngine.Lua.Color,System.Int32)
   name: DrawCircle(float, float, float, Color, int)
   href: api/SteelEngine.Lua.Draw.html#SteelEngine_Lua_Draw_DrawCircle_System_Single_System_Single_System_Single_SteelEngine_Lua_Color_System_Int32_
@@ -214,6 +259,62 @@ references:
   isSpec: "True"
   fullName: SteelEngine.Lua.Draw.DrawRoundedRectangle
   nameWithType: Draw.DrawRoundedRectangle
+- uid: SteelEngine.Lua.Draw.DrawText(System.String,System.String,System.Int32,System.Int32,SteelEngine.Lua.Color)
+  name: DrawText(string, string, int, int, Color)
+  href: api/SteelEngine.Lua.Draw.html#SteelEngine_Lua_Draw_DrawText_System_String_System_String_System_Int32_System_Int32_SteelEngine_Lua_Color_
+  commentId: M:SteelEngine.Lua.Draw.DrawText(System.String,System.String,System.Int32,System.Int32,SteelEngine.Lua.Color)
+  name.vb: DrawText(String, String, Integer, Integer, Color)
+  fullName: SteelEngine.Lua.Draw.DrawText(string, string, int, int, SteelEngine.Lua.Color)
+  fullName.vb: SteelEngine.Lua.Draw.DrawText(String, String, Integer, Integer, SteelEngine.Lua.Color)
+  nameWithType: Draw.DrawText(string, string, int, int, Color)
+  nameWithType.vb: Draw.DrawText(String, String, Integer, Integer, Color)
+- uid: SteelEngine.Lua.Draw.DrawText*
+  name: DrawText
+  href: api/SteelEngine.Lua.Draw.html#SteelEngine_Lua_Draw_DrawText_
+  commentId: Overload:SteelEngine.Lua.Draw.DrawText
+  isSpec: "True"
+  fullName: SteelEngine.Lua.Draw.DrawText
+  nameWithType: Draw.DrawText
+- uid: SteelEngine.Lua.Draw.DrawTexturedRectangle(System.Single,System.Single,System.Single,System.Single,System.String,SteelEngine.Lua.Color)
+  name: DrawTexturedRectangle(float, float, float, float, string, Color)
+  href: api/SteelEngine.Lua.Draw.html#SteelEngine_Lua_Draw_DrawTexturedRectangle_System_Single_System_Single_System_Single_System_Single_System_String_SteelEngine_Lua_Color_
+  commentId: M:SteelEngine.Lua.Draw.DrawTexturedRectangle(System.Single,System.Single,System.Single,System.Single,System.String,SteelEngine.Lua.Color)
+  name.vb: DrawTexturedRectangle(Single, Single, Single, Single, String, Color)
+  fullName: SteelEngine.Lua.Draw.DrawTexturedRectangle(float, float, float, float, string, SteelEngine.Lua.Color)
+  fullName.vb: SteelEngine.Lua.Draw.DrawTexturedRectangle(Single, Single, Single, Single, String, SteelEngine.Lua.Color)
+  nameWithType: Draw.DrawTexturedRectangle(float, float, float, float, string, Color)
+  nameWithType.vb: Draw.DrawTexturedRectangle(Single, Single, Single, Single, String, Color)
+- uid: SteelEngine.Lua.Draw.DrawTexturedRectangle*
+  name: DrawTexturedRectangle
+  href: api/SteelEngine.Lua.Draw.html#SteelEngine_Lua_Draw_DrawTexturedRectangle_
+  commentId: Overload:SteelEngine.Lua.Draw.DrawTexturedRectangle
+  isSpec: "True"
+  fullName: SteelEngine.Lua.Draw.DrawTexturedRectangle
+  nameWithType: Draw.DrawTexturedRectangle
+- uid: SteelEngine.Lua.FontObject
+  name: FontObject
+  href: api/SteelEngine.Lua.FontObject.html
+  commentId: T:SteelEngine.Lua.FontObject
+  fullName: SteelEngine.Lua.FontObject
+  nameWithType: FontObject
+- uid: SteelEngine.Lua.FontObject.font
+  name: font
+  href: api/SteelEngine.Lua.FontObject.html#SteelEngine_Lua_FontObject_font
+  commentId: F:SteelEngine.Lua.FontObject.font
+  fullName: SteelEngine.Lua.FontObject.font
+  nameWithType: FontObject.font
+- uid: SteelEngine.Lua.FontObject.fontPath
+  name: fontPath
+  href: api/SteelEngine.Lua.FontObject.html#SteelEngine_Lua_FontObject_fontPath
+  commentId: F:SteelEngine.Lua.FontObject.fontPath
+  fullName: SteelEngine.Lua.FontObject.fontPath
+  nameWithType: FontObject.fontPath
+- uid: SteelEngine.Lua.FontObject.size
+  name: size
+  href: api/SteelEngine.Lua.FontObject.html#SteelEngine_Lua_FontObject_size
+  commentId: F:SteelEngine.Lua.FontObject.size
+  fullName: SteelEngine.Lua.FontObject.size
+  nameWithType: FontObject.size
 - uid: SteelEngine.Lua.Global
   name: Global
   href: api/SteelEngine.Lua.Global.html
@@ -1436,13 +1537,13 @@ references:
   fullName: SteelEngine.Renderer
   nameWithType: Renderer
 - uid: SteelEngine.Renderer.DrawPoly(System.Single[],SteelEngine.Lua.Color)
-  name: DrawPoly(float[], Color)
+  name: DrawPoly(float[], Color?)
   href: api/SteelEngine.Renderer.html#SteelEngine_Renderer_DrawPoly_System_Single___SteelEngine_Lua_Color_
   commentId: M:SteelEngine.Renderer.DrawPoly(System.Single[],SteelEngine.Lua.Color)
   name.vb: DrawPoly(Single(), Color)
-  fullName: SteelEngine.Renderer.DrawPoly(float[], SteelEngine.Lua.Color)
+  fullName: SteelEngine.Renderer.DrawPoly(float[], SteelEngine.Lua.Color?)
   fullName.vb: SteelEngine.Renderer.DrawPoly(Single(), SteelEngine.Lua.Color)
-  nameWithType: Renderer.DrawPoly(float[], Color)
+  nameWithType: Renderer.DrawPoly(float[], Color?)
   nameWithType.vb: Renderer.DrawPoly(Single(), Color)
 - uid: SteelEngine.Renderer.DrawPoly*
   name: DrawPoly
@@ -1451,6 +1552,38 @@ references:
   isSpec: "True"
   fullName: SteelEngine.Renderer.DrawPoly
   nameWithType: Renderer.DrawPoly
+- uid: SteelEngine.Renderer.DrawText(System.String,System.Drawing.Font,System.Drawing.Point,SteelEngine.Lua.Color)
+  name: DrawText(string, Font, Point, Color?)
+  href: api/SteelEngine.Renderer.html#SteelEngine_Renderer_DrawText_System_String_System_Drawing_Font_System_Drawing_Point_SteelEngine_Lua_Color_
+  commentId: M:SteelEngine.Renderer.DrawText(System.String,System.Drawing.Font,System.Drawing.Point,SteelEngine.Lua.Color)
+  name.vb: DrawText(String, Font, Point, Color)
+  fullName: SteelEngine.Renderer.DrawText(string, System.Drawing.Font, System.Drawing.Point, SteelEngine.Lua.Color?)
+  fullName.vb: SteelEngine.Renderer.DrawText(String, System.Drawing.Font, System.Drawing.Point, SteelEngine.Lua.Color)
+  nameWithType: Renderer.DrawText(string, Font, Point, Color?)
+  nameWithType.vb: Renderer.DrawText(String, Font, Point, Color)
+- uid: SteelEngine.Renderer.DrawText*
+  name: DrawText
+  href: api/SteelEngine.Renderer.html#SteelEngine_Renderer_DrawText_
+  commentId: Overload:SteelEngine.Renderer.DrawText
+  isSpec: "True"
+  fullName: SteelEngine.Renderer.DrawText
+  nameWithType: Renderer.DrawText
+- uid: SteelEngine.Renderer.DrawTexturedPoly(System.Single[],System.Single[],SteelEngine.Texture,SteelEngine.Lua.Color)
+  name: DrawTexturedPoly(float[], float[], Texture, Color?)
+  href: api/SteelEngine.Renderer.html#SteelEngine_Renderer_DrawTexturedPoly_System_Single___System_Single___SteelEngine_Texture_SteelEngine_Lua_Color_
+  commentId: M:SteelEngine.Renderer.DrawTexturedPoly(System.Single[],System.Single[],SteelEngine.Texture,SteelEngine.Lua.Color)
+  name.vb: DrawTexturedPoly(Single(), Single(), Texture, Color)
+  fullName: SteelEngine.Renderer.DrawTexturedPoly(float[], float[], SteelEngine.Texture, SteelEngine.Lua.Color?)
+  fullName.vb: SteelEngine.Renderer.DrawTexturedPoly(Single(), Single(), SteelEngine.Texture, SteelEngine.Lua.Color)
+  nameWithType: Renderer.DrawTexturedPoly(float[], float[], Texture, Color?)
+  nameWithType.vb: Renderer.DrawTexturedPoly(Single(), Single(), Texture, Color)
+- uid: SteelEngine.Renderer.DrawTexturedPoly*
+  name: DrawTexturedPoly
+  href: api/SteelEngine.Renderer.html#SteelEngine_Renderer_DrawTexturedPoly_
+  commentId: Overload:SteelEngine.Renderer.DrawTexturedPoly
+  isSpec: "True"
+  fullName: SteelEngine.Renderer.DrawTexturedPoly
+  nameWithType: Renderer.DrawTexturedPoly
 - uid: SteelEngine.Renderer.Event_OnWindowResize(System.Int32,System.Int32)
   name: Event_OnWindowResize(int, int)
   href: api/SteelEngine.Renderer.html#SteelEngine_Renderer_Event_OnWindowResize_System_Int32_System_Int32_
@@ -1629,3 +1762,100 @@ references:
   isSpec: "True"
   fullName: SteelEngine.SteelEngine.Main
   nameWithType: SteelEngine.Main
+- uid: SteelEngine.Texture
+  name: Texture
+  href: api/SteelEngine.Texture.html
+  commentId: T:SteelEngine.Texture
+  fullName: SteelEngine.Texture
+  nameWithType: Texture
+- uid: SteelEngine.Texture.#ctor(System.Int32,System.Byte[])
+  name: Texture(int, byte[])
+  href: api/SteelEngine.Texture.html#SteelEngine_Texture__ctor_System_Int32_System_Byte___
+  commentId: M:SteelEngine.Texture.#ctor(System.Int32,System.Byte[])
+  name.vb: New(Integer, Byte())
+  fullName: SteelEngine.Texture.Texture(int, byte[])
+  fullName.vb: SteelEngine.Texture.New(Integer, Byte())
+  nameWithType: Texture.Texture(int, byte[])
+  nameWithType.vb: Texture.New(Integer, Byte())
+- uid: SteelEngine.Texture.#ctor(System.Int32,System.Int32,System.Byte[])
+  name: Texture(int, int, byte[])
+  href: api/SteelEngine.Texture.html#SteelEngine_Texture__ctor_System_Int32_System_Int32_System_Byte___
+  commentId: M:SteelEngine.Texture.#ctor(System.Int32,System.Int32,System.Byte[])
+  name.vb: New(Integer, Integer, Byte())
+  fullName: SteelEngine.Texture.Texture(int, int, byte[])
+  fullName.vb: SteelEngine.Texture.New(Integer, Integer, Byte())
+  nameWithType: Texture.Texture(int, int, byte[])
+  nameWithType.vb: Texture.New(Integer, Integer, Byte())
+- uid: SteelEngine.Texture.#ctor(System.Int32)
+  name: Texture(int)
+  href: api/SteelEngine.Texture.html#SteelEngine_Texture__ctor_System_Int32_
+  commentId: M:SteelEngine.Texture.#ctor(System.Int32)
+  name.vb: New(Integer)
+  fullName: SteelEngine.Texture.Texture(int)
+  fullName.vb: SteelEngine.Texture.New(Integer)
+  nameWithType: Texture.Texture(int)
+  nameWithType.vb: Texture.New(Integer)
+- uid: SteelEngine.Texture.#ctor*
+  name: Texture
+  href: api/SteelEngine.Texture.html#SteelEngine_Texture__ctor_
+  commentId: Overload:SteelEngine.Texture.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: SteelEngine.Texture.Texture
+  fullName.vb: SteelEngine.Texture.New
+  nameWithType: Texture.Texture
+  nameWithType.vb: Texture.New
+- uid: SteelEngine.Texture.Data
+  name: Data
+  href: api/SteelEngine.Texture.html#SteelEngine_Texture_Data
+  commentId: F:SteelEngine.Texture.Data
+  fullName: SteelEngine.Texture.Data
+  nameWithType: Texture.Data
+- uid: SteelEngine.Texture.FromBitmap(System.Drawing.Bitmap)
+  name: FromBitmap(Bitmap)
+  href: api/SteelEngine.Texture.html#SteelEngine_Texture_FromBitmap_System_Drawing_Bitmap_
+  commentId: M:SteelEngine.Texture.FromBitmap(System.Drawing.Bitmap)
+  fullName: SteelEngine.Texture.FromBitmap(System.Drawing.Bitmap)
+  nameWithType: Texture.FromBitmap(Bitmap)
+- uid: SteelEngine.Texture.FromBitmap*
+  name: FromBitmap
+  href: api/SteelEngine.Texture.html#SteelEngine_Texture_FromBitmap_
+  commentId: Overload:SteelEngine.Texture.FromBitmap
+  isSpec: "True"
+  fullName: SteelEngine.Texture.FromBitmap
+  nameWithType: Texture.FromBitmap
+- uid: SteelEngine.Texture.Handle
+  name: Handle
+  href: api/SteelEngine.Texture.html#SteelEngine_Texture_Handle
+  commentId: F:SteelEngine.Texture.Handle
+  fullName: SteelEngine.Texture.Handle
+  nameWithType: Texture.Handle
+- uid: SteelEngine.Texture.LoadFromFile(System.String)
+  name: LoadFromFile(string)
+  href: api/SteelEngine.Texture.html#SteelEngine_Texture_LoadFromFile_System_String_
+  commentId: M:SteelEngine.Texture.LoadFromFile(System.String)
+  name.vb: LoadFromFile(String)
+  fullName: SteelEngine.Texture.LoadFromFile(string)
+  fullName.vb: SteelEngine.Texture.LoadFromFile(String)
+  nameWithType: Texture.LoadFromFile(string)
+  nameWithType.vb: Texture.LoadFromFile(String)
+- uid: SteelEngine.Texture.LoadFromFile*
+  name: LoadFromFile
+  href: api/SteelEngine.Texture.html#SteelEngine_Texture_LoadFromFile_
+  commentId: Overload:SteelEngine.Texture.LoadFromFile
+  isSpec: "True"
+  fullName: SteelEngine.Texture.LoadFromFile
+  nameWithType: Texture.LoadFromFile
+- uid: SteelEngine.Texture.Use(OpenTK.Graphics.OpenGL4.TextureUnit)
+  name: Use(TextureUnit)
+  href: api/SteelEngine.Texture.html#SteelEngine_Texture_Use_OpenTK_Graphics_OpenGL4_TextureUnit_
+  commentId: M:SteelEngine.Texture.Use(OpenTK.Graphics.OpenGL4.TextureUnit)
+  fullName: SteelEngine.Texture.Use(OpenTK.Graphics.OpenGL4.TextureUnit)
+  nameWithType: Texture.Use(TextureUnit)
+- uid: SteelEngine.Texture.Use*
+  name: Use
+  href: api/SteelEngine.Texture.html#SteelEngine_Texture_Use_
+  commentId: Overload:SteelEngine.Texture.Use
+  isSpec: "True"
+  fullName: SteelEngine.Texture.Use
+  nameWithType: Texture.Use

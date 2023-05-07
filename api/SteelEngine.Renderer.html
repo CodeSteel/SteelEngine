@@ -83,7 +83,7 @@
 
   <h1 id="SteelEngine_Renderer" data-uid="SteelEngine.Renderer" class="text-break">
     Class Renderer
-  <a class="header-action link-secondary" title="View source" href="https://github.com/CodeSteel/SteelEngine/blob/main/SteelEngine/Renderer.cs/#L9"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/CodeSteel/SteelEngine/blob/main/SteelEngine/Renderer.cs/#L10"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -150,16 +150,16 @@
   <a id="SteelEngine_Renderer_DrawPoly_" data-uid="SteelEngine.Renderer.DrawPoly*"></a>
 
   <h3 id="SteelEngine_Renderer_DrawPoly_System_Single___SteelEngine_Lua_Color_" data-uid="SteelEngine.Renderer.DrawPoly(System.Single[],SteelEngine.Lua.Color)">
-  DrawPoly(float[], Color)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/CodeSteel/SteelEngine/blob/main/SteelEngine/Renderer.cs/#L46"><i class="bi bi-code-slash"></i></a>
+  DrawPoly(float[], Color?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/CodeSteel/SteelEngine/blob/main/SteelEngine/Renderer.cs/#L50"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Draws a polygon to the screen</p>
+  <div class="markdown level1 summary"><p>Renders a polygon to the screen</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void DrawPoly(float[] vertices, Color color)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void DrawPoly(float[] vertices, Color? color)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -181,11 +181,87 @@
 
 
 
+  <a id="SteelEngine_Renderer_DrawText_" data-uid="SteelEngine.Renderer.DrawText*"></a>
+
+  <h3 id="SteelEngine_Renderer_DrawText_System_String_System_Drawing_Font_System_Drawing_Point_SteelEngine_Lua_Color_" data-uid="SteelEngine.Renderer.DrawText(System.String,System.Drawing.Font,System.Drawing.Point,SteelEngine.Lua.Color)">
+  DrawText(string, Font, Point, Color?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/CodeSteel/SteelEngine/blob/main/SteelEngine/Renderer.cs/#L157"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Renders a text to the screen.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void DrawText(string text, Font font, Point point, Color? color)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>text</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>font</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.drawing.font">Font</a></dt>
+    <dd></dd>
+    <dt><code>point</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.drawing.point">Point</a></dt>
+    <dd></dd>
+    <dt><code>color</code> <a class="xref" href="SteelEngine.Lua.Color.html">Color</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SteelEngine_Renderer_DrawTexturedPoly_" data-uid="SteelEngine.Renderer.DrawTexturedPoly*"></a>
+
+  <h3 id="SteelEngine_Renderer_DrawTexturedPoly_System_Single___System_Single___SteelEngine_Texture_SteelEngine_Lua_Color_" data-uid="SteelEngine.Renderer.DrawTexturedPoly(System.Single[],System.Single[],SteelEngine.Texture,SteelEngine.Lua.Color)">
+  DrawTexturedPoly(float[], float[], Texture, Color?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/CodeSteel/SteelEngine/blob/main/SteelEngine/Renderer.cs/#L98"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Renders a textured polygon to the screen.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void DrawTexturedPoly(float[] vertices, float[] texCoords, Texture texture, Color? color)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>vertices</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>[]</dt>
+    <dd></dd>
+    <dt><code>texCoords</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>[]</dt>
+    <dd></dd>
+    <dt><code>texture</code> <a class="xref" href="SteelEngine.Texture.html">Texture</a></dt>
+    <dd></dd>
+    <dt><code>color</code> <a class="xref" href="SteelEngine.Lua.Color.html">Color</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
   <a id="SteelEngine_Renderer_Event_OnWindowResize_" data-uid="SteelEngine.Renderer.Event_OnWindowResize*"></a>
 
   <h3 id="SteelEngine_Renderer_Event_OnWindowResize_System_Int32_System_Int32_" data-uid="SteelEngine.Renderer.Event_OnWindowResize(System.Int32,System.Int32)">
   Event_OnWindowResize(int, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/CodeSteel/SteelEngine/blob/main/SteelEngine/Renderer.cs/#L90"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/CodeSteel/SteelEngine/blob/main/SteelEngine/Renderer.cs/#L196"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>This event is called internally when the window is resized.</p>
@@ -219,7 +295,7 @@
 
   <h3 id="SteelEngine_Renderer_Initialize_System_Int32_System_Int32_" data-uid="SteelEngine.Renderer.Initialize(System.Int32,System.Int32)">
   Initialize(int, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/CodeSteel/SteelEngine/blob/main/SteelEngine/Renderer.cs/#L23"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/CodeSteel/SteelEngine/blob/main/SteelEngine/Renderer.cs/#L26"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Called internally to initialize the renderer.</p>
@@ -253,7 +329,7 @@
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/CodeSteel/SteelEngine/blob/main/SteelEngine/Renderer.cs/#L9" class="edit-link">Edit this page</a>
+          <a href="https://github.com/CodeSteel/SteelEngine/blob/main/SteelEngine/Renderer.cs/#L10" class="edit-link">Edit this page</a>
         </div>
 
         
