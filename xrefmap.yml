@@ -1201,6 +1201,22 @@ references:
   commentId: T:SteelEngine.Lua.Time
   fullName: SteelEngine.Lua.Time
   nameWithType: Time
+- uid: SteelEngine.Lua.Time.CreateTimer(System.String,System.Single,System.Single,NLua.LuaFunction)
+  name: CreateTimer(string, float, float, LuaFunction)
+  href: api/SteelEngine.Lua.Time.html#SteelEngine_Lua_Time_CreateTimer_System_String_System_Single_System_Single_NLua_LuaFunction_
+  commentId: M:SteelEngine.Lua.Time.CreateTimer(System.String,System.Single,System.Single,NLua.LuaFunction)
+  name.vb: CreateTimer(String, Single, Single, LuaFunction)
+  fullName: SteelEngine.Lua.Time.CreateTimer(string, float, float, NLua.LuaFunction)
+  fullName.vb: SteelEngine.Lua.Time.CreateTimer(String, Single, Single, NLua.LuaFunction)
+  nameWithType: Time.CreateTimer(string, float, float, LuaFunction)
+  nameWithType.vb: Time.CreateTimer(String, Single, Single, LuaFunction)
+- uid: SteelEngine.Lua.Time.CreateTimer*
+  name: CreateTimer
+  href: api/SteelEngine.Lua.Time.html#SteelEngine_Lua_Time_CreateTimer_
+  commentId: Overload:SteelEngine.Lua.Time.CreateTimer
+  isSpec: "True"
+  fullName: SteelEngine.Lua.Time.CreateTimer
+  nameWithType: Time.CreateTimer
 - uid: SteelEngine.Lua.Time.GetDeltaTime
   name: GetDeltaTime()
   href: api/SteelEngine.Lua.Time.html#SteelEngine_Lua_Time_GetDeltaTime
@@ -1227,6 +1243,62 @@ references:
   isSpec: "True"
   fullName: SteelEngine.Lua.Time.GetTime
   nameWithType: Time.GetTime
+- uid: SteelEngine.Lua.Time.RemoveTimer(System.String)
+  name: RemoveTimer(string)
+  href: api/SteelEngine.Lua.Time.html#SteelEngine_Lua_Time_RemoveTimer_System_String_
+  commentId: M:SteelEngine.Lua.Time.RemoveTimer(System.String)
+  name.vb: RemoveTimer(String)
+  fullName: SteelEngine.Lua.Time.RemoveTimer(string)
+  fullName.vb: SteelEngine.Lua.Time.RemoveTimer(String)
+  nameWithType: Time.RemoveTimer(string)
+  nameWithType.vb: Time.RemoveTimer(String)
+- uid: SteelEngine.Lua.Time.RemoveTimer*
+  name: RemoveTimer
+  href: api/SteelEngine.Lua.Time.html#SteelEngine_Lua_Time_RemoveTimer_
+  commentId: Overload:SteelEngine.Lua.Time.RemoveTimer
+  isSpec: "True"
+  fullName: SteelEngine.Lua.Time.RemoveTimer
+  nameWithType: Time.RemoveTimer
+- uid: SteelEngine.Lua.Time.TimerExists(System.String)
+  name: TimerExists(string)
+  href: api/SteelEngine.Lua.Time.html#SteelEngine_Lua_Time_TimerExists_System_String_
+  commentId: M:SteelEngine.Lua.Time.TimerExists(System.String)
+  name.vb: TimerExists(String)
+  fullName: SteelEngine.Lua.Time.TimerExists(string)
+  fullName.vb: SteelEngine.Lua.Time.TimerExists(String)
+  nameWithType: Time.TimerExists(string)
+  nameWithType.vb: Time.TimerExists(String)
+- uid: SteelEngine.Lua.Time.TimerExists*
+  name: TimerExists
+  href: api/SteelEngine.Lua.Time.html#SteelEngine_Lua_Time_TimerExists_
+  commentId: Overload:SteelEngine.Lua.Time.TimerExists
+  isSpec: "True"
+  fullName: SteelEngine.Lua.Time.TimerExists
+  nameWithType: Time.TimerExists
+- uid: SteelEngine.Lua.TimerObject
+  name: TimerObject
+  href: api/SteelEngine.Lua.TimerObject.html
+  commentId: T:SteelEngine.Lua.TimerObject
+  fullName: SteelEngine.Lua.TimerObject
+  nameWithType: TimerObject
+- uid: SteelEngine.Lua.TimerObject.callback
+  name: callback
+  href: api/SteelEngine.Lua.TimerObject.html#SteelEngine_Lua_TimerObject_callback
+  commentId: F:SteelEngine.Lua.TimerObject.callback
+  fullName: SteelEngine.Lua.TimerObject.callback
+  nameWithType: TimerObject.callback
+- uid: SteelEngine.Lua.TimerObject.timer
+  name: timer
+  href: api/SteelEngine.Lua.TimerObject.html#SteelEngine_Lua_TimerObject_timer
+  commentId: F:SteelEngine.Lua.TimerObject.timer
+  fullName: SteelEngine.Lua.TimerObject.timer
+  nameWithType: TimerObject.timer
+- uid: SteelEngine.Lua.TimerObject.timesRan
+  name: timesRan
+  href: api/SteelEngine.Lua.TimerObject.html#SteelEngine_Lua_TimerObject_timesRan
+  commentId: F:SteelEngine.Lua.TimerObject.timesRan
+  fullName: SteelEngine.Lua.TimerObject.timesRan
+  nameWithType: TimerObject.timesRan
 - uid: SteelEngine.Lua.Vector2
   name: Vector2
   href: api/SteelEngine.Lua.Vector2.html

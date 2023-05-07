@@ -37,7 +37,7 @@
   "api/SteelEngine.Lua.html": {
     "href": "api/SteelEngine.Lua.html",
     "title": "Namespace SteelEngine.Lua | Steel Engine",
-    "keywords": "Namespace SteelEngine.Lua Classes Color A typical Color class used to store rgba values. Draw Used for sending graphics to the renderer. Global Represents Lua's global class. Input Used for handling user input. KeyCode Time This is used to bring all the time outputs into one class. Vector2 Represents a generic 2D vector array. Window This is used to call functions to the Game Window. Enums CursorState The state of the Cursor when the application is focused."
+    "keywords": "Namespace SteelEngine.Lua Classes Color A typical Color class used to store rgba values. Draw Used for sending graphics to the renderer. Global Represents Lua's global class. Input Used for handling user input. KeyCode Time This is used to bring all the time outputs into one class. Vector2 Represents a generic 2D vector array. Window This is used to call functions to the Game Window. Structs TimerObject Enums CursorState The state of the Cursor when the application is focused."
   },
   "api/SteelEngine.Lua.Input.html": {
     "href": "api/SteelEngine.Lua.Input.html",
@@ -52,7 +52,12 @@
   "api/SteelEngine.Lua.Time.html": {
     "href": "api/SteelEngine.Lua.Time.html",
     "title": "Class Time | Steel Engine",
-    "keywords": "Class Time Namespace SteelEngine.Lua Assembly SteelEngine.dll This is used to bring all the time outputs into one class. public class Time Inheritance object Time Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Methods GetDeltaTime() Returns the amount of time it took to render the last frame in seconds. public static float GetDeltaTime() Returns float GetTime() Returns the amount of time the appliction has been running. public static double GetTime() Returns double"
+    "keywords": "Class Time Namespace SteelEngine.Lua Assembly SteelEngine.dll This is used to bring all the time outputs into one class. public class Time Inheritance object Time Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Methods CreateTimer(string, float, float, LuaFunction) Creates a new timer object. public static void CreateTimer(string identifier, float delay, float interval, LuaFunction callback) Parameters identifier string The name of the timer. delay float How long before the timer goes off? interval float How much times should the timer go off before being destroyed? callback LuaFunction The function to call when the timer has looped. GetDeltaTime() Returns the amount of time it took to render the last frame in seconds. public static float GetDeltaTime() Returns float GetTime() Returns the amount of time the appliction has been running. public static double GetTime() Returns double RemoveTimer(string) Removes the given timer, if one exists. public static void RemoveTimer(string identifier) Parameters identifier string TimerExists(string) Returns if the timer exists. public static bool TimerExists(string identifier) Parameters identifier string Returns bool"
+  },
+  "api/SteelEngine.Lua.TimerObject.html": {
+    "href": "api/SteelEngine.Lua.TimerObject.html",
+    "title": "Struct TimerObject | Steel Engine",
+    "keywords": "Struct TimerObject Namespace SteelEngine.Lua Assembly SteelEngine.dll public struct TimerObject Inherited Members ValueType.Equals(object) ValueType.GetHashCode() ValueType.ToString() object.Equals(object, object) object.GetType() object.ReferenceEquals(object, object) Fields callback public LuaFunction callback Field Value LuaFunction timer public Timer timer Field Value Timer timesRan public int timesRan Field Value int"
   },
   "api/SteelEngine.Lua.Vector2.html": {
     "href": "api/SteelEngine.Lua.Vector2.html",
