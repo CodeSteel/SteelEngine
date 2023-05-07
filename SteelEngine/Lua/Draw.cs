@@ -1,10 +1,37 @@
-﻿namespace SteelEngine.Lua
+﻿using System.Drawing;
+using System.Xml.Serialization;
+
+namespace SteelEngine.Lua
 {
+    /// <summary>
+    /// Holds information for loaded fonts.
+    /// </summary>
+    public struct FontObject
+    {
+        /// <summary>
+        /// The path to the font.
+        /// </summary>
+        public string fontPath;
+
+        /// <summary>
+        /// The size of the font.
+        /// </summary>
+        public int size;
+
+        /// <summary>
+        /// The generated font.
+        /// </summary>
+        public Font font;
+    }
+
     /// <summary>
     /// Used for sending graphics to the renderer.
     /// </summary>
     public static class Draw
     {
+        private static Dictionary<string, FontObject> FontObjects = new Dictionary<string, FontObject>();
+        private static Dictionary<string, Texture> TextureObjects = new Dictionary<string, Texture>();
+
         /// <summary>
         /// Draws a rectangle at the position.
         /// </summary>
@@ -24,6 +51,37 @@
             };
 
             Renderer.DrawPoly(vertices, color);
+        }
+
+        /// <summary>
+        /// Draws a textured rectangle at the position.
+        /// </summary>
+        /// <param name="x"></param>
+        /// <param name="y"></param>
+        /// <param name="width"></param>
+        /// <param name="height"></param>
+        /// <param name="textureName"></param>
+        /// <param name="color"></param>
+        public static void DrawTexturedRectangle(float x, float y, float width, float height, string textureName, Color color)
+        {
+            float[] vertices = new float[]
+{
+                x, y,
+                x + width, y,
+                x + width, y + height,
+                x, y + height
+            };
+
+            float[] texCoords = new float[]
+            {
+                0.0f, 0.0f,
+                1.0f, 0.0f,
+                1.0f, 1.0f,
+                0.0f, 1.0f
+            };
+
+            Texture texture = TextureObjects[textureName];
+            Renderer.DrawTexturedPoly(vertices, texCoords, texture, color);
         }
 
         /// <summary>
@@ -75,7 +133,7 @@
         {
             List<float> vertices = new List<float>();
 
-            for (int i=0; i<=segments; i++)
+            for (int i = 0; i <= segments; i++)
             {
                 float angle = (float)i / segments * 2 * MathF.PI;
                 float _x = x + radius * MathF.Cos(angle);
@@ -87,5 +145,53 @@
 
             Renderer.DrawPoly(vertices.ToArray(), color);
         }
+
+        /// <summary>
+        /// Registers a font to be used in runtime.
+        /// </summary>
+        /// <param name="identifier"></param>
+        /// <param name="fontPath"></param>
+        /// <param name="fontSize"></param>
+        public static void CreateFont(string identifier, string fontPath, int fontSize)
+        {
+            // Initialize the font object
+            FontObject obj = new FontObject()
+            {
+                fontPath = fontPath,
+                size = fontSize
+            };
+
+            // Generate the font
+            Font font = new Font(fontPath, fontSize);
+            obj.font = font;
+
+            // Add the font object
+            FontObjects.Add(identifier, obj);
+        }
+
+        /// <summary>
+        /// Registers a texture.
+        /// </summary>
+        /// <param name="identifier"></param>
+        /// <param name="path"></param>
+        public static void CreateTexture(string identifier, string path)
+        {
+            Texture texture = Texture.LoadFromFile(path);
+            TextureObjects.Add(identifier, texture);
+        }
+
+        /// <summary>
+        /// Draws text to the screen.
+        /// </summary>
+        /// <param name="text"></param>
+        /// <param name="fontName"></param>
+        /// <param name="x"></param>
+        /// <param name="y"></param>
+        /// <param name="color"></param>
+        public static void DrawText(string text, string fontName, int x, int y, Color color)
+        {
+            Font font = new Font("resources/fonts/Roboto-Regular.ttf", 50); //FontObjects[fontName].font;
+            Renderer.DrawText("JELLLLLlllaasdasdasdasd", font, new Point(100, 100), color);
+        } 
     }
 }

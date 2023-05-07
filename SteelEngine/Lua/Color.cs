@@ -1,4 +1,5 @@
 ﻿using OpenTK.Mathematics;
+using System.Drawing;
 
 namespace SteelEngine.Lua
 {
@@ -75,5 +76,7 @@ namespace SteelEngine.Lua
         {
             return new Color4(r / 255.0f, g / 255.0f, b / 255.0f, a / 255.0f);
         }
+
+        public static Color White => new Color(255, 255, 255);
     }
 }
