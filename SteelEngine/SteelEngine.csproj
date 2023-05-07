@@ -37,12 +37,6 @@
     <None Update="resources\shaders\shader.vert">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="resources\shaders\texture.frag">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="resources\shaders\texture.vert">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
     <None Update="resources\textures\test.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>

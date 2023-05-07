@@ -27,6 +27,7 @@ namespace SteelEngine.Lua
     /// <summary>
     /// Used for sending graphics to the renderer.
     /// </summary>
+    [System.Runtime.Versioning.SupportedOSPlatform("windows")]
     public static class Draw
     {
         private static Dictionary<string, FontObject> FontObjects = new Dictionary<string, FontObject>();
@@ -64,6 +65,21 @@ namespace SteelEngine.Lua
         /// <param name="color"></param>
         public static void DrawTexturedRectangle(float x, float y, float width, float height, string textureName, Color color)
         {
+            Texture texture = TextureObjects[textureName];
+            DrawTexturedRectangle(x, y, width, height, texture, color);
+        }
+
+        /// <summary>
+        /// Draws a textured rectangle at the position.
+        /// </summary>
+        /// <param name="x"></param>
+        /// <param name="y"></param>
+        /// <param name="width"></param>
+        /// <param name="height"></param>
+        /// <param name="texture"></param>
+        /// <param name="color"></param>
+        public static void DrawTexturedRectangle(float x, float y, float width, float height, Texture texture, Color color)
+        {
             float[] vertices = new float[]
 {
                 x, y,
@@ -80,7 +96,6 @@ namespace SteelEngine.Lua
                 0.0f, 1.0f
             };
 
-            Texture texture = TextureObjects[textureName];
             Renderer.DrawTexturedPoly(vertices, texCoords, texture, color);
         }
 
@@ -190,8 +205,8 @@ namespace SteelEngine.Lua
         /// <param name="color"></param>
         public static void DrawText(string text, string fontName, int x, int y, Color color)
         {
-            Font font = new Font("resources/fonts/Roboto-Regular.ttf", 50); //FontObjects[fontName].font;
-            Renderer.DrawText("JELLLLLlllaasdasdasdasd", font, new Point(100, 100), color);
+            Font font = FontObjects[fontName].font;
+            Renderer.DrawText(text, font, new Vector2(x, y), color);
         } 
     }
 }

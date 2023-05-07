@@ -65,6 +65,7 @@ namespace SteelEngine
             // initiailize gl
             GL.Enable(EnableCap.DepthTest);
             GL.Enable(EnableCap.Blend);
+            GL.BlendFunc(BlendingFactor.SrcAlpha, BlendingFactor.OneMinusSrcAlpha);
 
             GL.ClearColor(engineProperties.BackgroundColor.ToColor4());
 
