@@ -19,6 +19,9 @@ namespace SteelEngine
         private static int _uProjectionLocation;
         private static int _uModelViewLocation;
 
+        private static Bitmap? bitmap = null;
+        private static Graphics? graphics = null;
+
         /// <summary>
         /// Called internally to initialize the renderer.
         /// </summary>
@@ -37,10 +40,24 @@ namespace SteelEngine
             // Initialize shader programs
             ShaderProgram = new Shader("resources/shaders/shader.vert", "resources/shaders/shader.frag");
 
-            // Initialize the projection matrix
-            SetupView(screenWidth, screenHeight);
+            // Initialize view window
+            Event_OnWindowSizeChanged(screenWidth, screenHeight);
+
+            // handle event
+            Game.instance.onWindowSizeChanged += Event_OnWindowSizeChanged;
         }
 
+        private static void Event_OnWindowSizeChanged(int w, int h)
+        {
+            bitmap = new Bitmap(Game.instance.Size.X, Game.instance.Size.Y);
+            graphics = Graphics.FromImage(bitmap);
+
+            graphics.TextRenderingHint = System.Drawing.Text.TextRenderingHint.AntiAliasGridFit;
+            graphics.CompositingMode = System.Drawing.Drawing2D.CompositingMode.SourceOver;
+            graphics.CompositingQuality = System.Drawing.Drawing2D.CompositingQuality.HighQuality;
+
+            SetupView(w, h);
+        }
 
         /// <summary>
         /// Renders a polygon to the screen
@@ -49,6 +66,7 @@ namespace SteelEngine
         /// <param name="color"></param>
         public static void DrawPoly(float[] vertices, Lua.Color? color)
         {
+            if (!Game.instance.IsFocused) return;
             color = color == null ? Lua.Color.White : color;
 
             // Normalize color components
@@ -103,6 +121,7 @@ namespace SteelEngine
         /// <param name="color"></param>
         public static void DrawTexturedPoly(float[] vertices, float[] texCoords, Texture texture, Lua.Color? color)
         {
+            if (!Game.instance.IsFocused) return;
             color = color == null ? Lua.Color.White : color;
 
             // Normalize color components
@@ -160,38 +179,17 @@ namespace SteelEngine
         /// <param name="font"></param>
         /// <param name="position"></param>
         /// <param name="color"></param>
-        public static void DrawText(string text, Font font, Lua.Vector2 position, Lua.Color? color)
+        public static void DrawText(string text, Font font, Lua.Vector2 position, Lua.Color color)
         {
-            color = color == null ? Lua.Color.White : color;
+            if (!Game.instance.IsFocused || Game.instance == null) return;
 
-            Bitmap bitmap = new Bitmap(Game.instance.Size.X, Game.instance.Size.Y);
+            // draw the text to the bitmap
+            graphics!.Clear(System.Drawing.Color.FromArgb(0, 0, 0, 0));
+            graphics!.DrawString(text, font, Brushes.White, new Point(0, 0));
 
-            Graphics graphics = Graphics.FromImage(bitmap);
-            graphics.TextRenderingHint = System.Drawing.Text.TextRenderingHint.AntiAliasGridFit;
-            graphics.CompositingMode = System.Drawing.Drawing2D.CompositingMode.SourceOver;
-            graphics.CompositingQuality = System.Drawing.Drawing2D.CompositingQuality.HighQuality;
-
-            graphics.Clear(System.Drawing.Color.Transparent);
-
-            graphics.DrawString(text, font, Brushes.White, new Point(0, 0));
-
-            Texture texture = Texture.FromBitmap(bitmap);
-
-            graphics.Dispose();
-            bitmap.Dispose();
-
-            // Calculate the texture coordinates for a rectangle that covers the entire screen
+            // render the bitmap
+            using var texture = Texture.FromBitmap(bitmap!);
             Draw.DrawTexturedRectangle(position.x, position.y, texture.Width, texture.Height, texture, color);
-        }
-
-        /// <summary>
-        /// This event is called internally when the window is resized.
-        /// </summary>
-        /// <param name="screenWidth"></param>
-        /// <param name="screenHeight"></param>
-        public static void Event_OnWindowResize(int screenWidth, int screenHeight)
-        {
-            SetupView(screenWidth, screenHeight);
         }
 
         /// <summary>

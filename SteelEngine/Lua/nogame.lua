@@ -21,9 +21,11 @@ function Steel.Preload(ctx)
 end
 
 function Steel.Load()
-	Draw.CreateFont("Default", "resources/fonts/Roboto-Regular.ttf", 70)
+	--Draw.CreateFont("Default", "resources/fonts/Roboto-Regular.ttf", 70)
+
+	Draw.CreateFont("DefaultSmall", "resources/fonts/Roboto-Regular.ttf", 20)
 	
-	-- Draw.CreateTexture("meme", "resources/textures/test.png")
+	Draw.CreateTexture("meme", "resources/textures/test.png")
 end
 
 function Steel.Update(dt)
@@ -35,13 +37,18 @@ end
 function Steel.Render()
 	-- testPerformance()
 
-	Draw.DrawText("Hello, World!", "Default", 150, 150, Color(255, 0, 0))
+	-- Draw.DrawText("Hello, World!", "Default", 150, 150, Color(255, 0, 0))
 
-	-- Draw.DrawRectangle(50, 50, 100, 100, Color(0, 255, 0, 255))
 
-	-- Draw.DrawRectangle(0, 0, 100, 100, Color(255, 0, 0, 255))
+	-- Draw.DrawRectangle(10, 10, 100, 100, Color(255, 0, 0, 255))
 
-	-- Draw.DrawRectangle(150, 0, 100, 100, Color(0, 0, 255, 255))
+	Draw.DrawRectangle(50, 50, 100, 100, Color(255, 255, 255, 255))
 
-	-- Draw.DrawTexturedRectangle(100, 100, 250, 250, "meme", Color(255, 255, 255))
+	Draw.DrawRectangle(0, 0, 100, 100, Color(255, 0, 0, 255))
+
+	
+	Draw.DrawRectangle(150, 0, 100, 100, Color(0, 0, 255, 255))
+
+	Draw.DrawTexturedRectangle(100, 100, 250, 250, "meme", Color(255, 255, 255))
+	Draw.DrawText("Hello, World tooooossssssssS!", "DefaultSmall", 50, 50, Color(255, 200, 50))
 end

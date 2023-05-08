@@ -22,9 +22,12 @@ namespace SteelEngine
 
         public delegate void OnLoadHandler();
         public event OnLoadHandler ?onLoad;
+
+        public delegate void OnWindowSizeChanged(int w, int h);
+        public event OnWindowSizeChanged? onWindowSizeChanged;
         #endregion
 
-        EngineProperties engineProperties;
+        public EngineProperties engineProperties;
 
         public Game(EngineProperties properties) : base(GameWindowSettings.Default, new NativeWindowSettings() { Size = (properties.Width, properties.Height), Title = properties.Version == null ? properties.Title : $"{properties.Title} v{properties.Version}"})
         {
@@ -35,7 +38,6 @@ namespace SteelEngine
         private static void SetWindowSize(int width, int height)
         {
             GL.Viewport(0, 0, width, height);
-            Renderer.Event_OnWindowResize(width, height);
         }
 
         protected override void OnRenderFrame(FrameEventArgs args)
@@ -63,7 +65,7 @@ namespace SteelEngine
             base.OnLoad();
 
             // initiailize gl
-            GL.Enable(EnableCap.DepthTest);
+            //GL.Enable(EnableCap.DepthTest);
             GL.Enable(EnableCap.Blend);
             GL.BlendFunc(BlendingFactor.SrcAlpha, BlendingFactor.OneMinusSrcAlpha);
 
@@ -89,6 +91,9 @@ namespace SteelEngine
         {
             base.OnResize(e);
             SetWindowSize(e.Width, e.Height);
+
+            if (onWindowSizeChanged != null)
+                onWindowSizeChanged(e.Width, e.Height);
         }
 
         #region Input  Events

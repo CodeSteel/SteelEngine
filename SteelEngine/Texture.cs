@@ -8,7 +8,7 @@ using System.Reflection.Metadata;
 
 namespace SteelEngine
 {
-    public class Texture
+    public class Texture : IDisposable
     {
         public readonly int Handle;
         public readonly byte[] Data;
@@ -146,6 +146,11 @@ namespace SteelEngine
             {
                 throw new Exception("OpenGL error: " + errorCode.ToString());
             }
+        }
+
+        public void Dispose()
+        {
+            GL.DeleteTexture(Handle);
         }
 
         /// <summary>
