@@ -95,7 +95,7 @@
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class Texture</code></pre>
+    <pre><code class="lang-csharp hljs">public class Texture : IDisposable</code></pre>
   </div>
 
 
@@ -109,6 +109,12 @@
     </dd>
   </dl>
 
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    </dd>
+  </dl>
 
 
   <dl class="typelist derived">
@@ -377,6 +383,33 @@
 </h2>
 
 
+  <a id="SteelEngine_Texture_Dispose_" data-uid="SteelEngine.Texture.Dispose*"></a>
+
+  <h3 id="SteelEngine_Texture_Dispose" data-uid="SteelEngine.Texture.Dispose">
+  Dispose()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/CodeSteel/SteelEngine/blob/main/SteelEngine/Texture.cs/#L151"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
   <a id="SteelEngine_Texture_FromBitmap_" data-uid="SteelEngine.Texture.FromBitmap*"></a>
 
   <h3 id="SteelEngine_Texture_FromBitmap_System_Drawing_Bitmap_" data-uid="SteelEngine.Texture.FromBitmap(System.Drawing.Bitmap)">
@@ -455,7 +488,7 @@
 
   <h3 id="SteelEngine_Texture_Use_OpenTK_Graphics_OpenGL4_TextureUnit_" data-uid="SteelEngine.Texture.Use(OpenTK.Graphics.OpenGL4.TextureUnit)">
   Use(TextureUnit)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/CodeSteel/SteelEngine/blob/main/SteelEngine/Texture.cs/#L155"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/CodeSteel/SteelEngine/blob/main/SteelEngine/Texture.cs/#L160"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Uses the Texture in the current GL scope.</p>

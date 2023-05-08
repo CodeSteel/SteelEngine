@@ -1562,13 +1562,13 @@ references:
   fullName: SteelEngine.Renderer.DrawPoly
   nameWithType: Renderer.DrawPoly
 - uid: SteelEngine.Renderer.DrawText(System.String,System.Drawing.Font,SteelEngine.Lua.Vector2,SteelEngine.Lua.Color)
-  name: DrawText(string, Font, Vector2, Color?)
+  name: DrawText(string, Font, Vector2, Color)
   href: api/SteelEngine.Renderer.html#SteelEngine_Renderer_DrawText_System_String_System_Drawing_Font_SteelEngine_Lua_Vector2_SteelEngine_Lua_Color_
   commentId: M:SteelEngine.Renderer.DrawText(System.String,System.Drawing.Font,SteelEngine.Lua.Vector2,SteelEngine.Lua.Color)
   name.vb: DrawText(String, Font, Vector2, Color)
-  fullName: SteelEngine.Renderer.DrawText(string, System.Drawing.Font, SteelEngine.Lua.Vector2, SteelEngine.Lua.Color?)
+  fullName: SteelEngine.Renderer.DrawText(string, System.Drawing.Font, SteelEngine.Lua.Vector2, SteelEngine.Lua.Color)
   fullName.vb: SteelEngine.Renderer.DrawText(String, System.Drawing.Font, SteelEngine.Lua.Vector2, SteelEngine.Lua.Color)
-  nameWithType: Renderer.DrawText(string, Font, Vector2, Color?)
+  nameWithType: Renderer.DrawText(string, Font, Vector2, Color)
   nameWithType.vb: Renderer.DrawText(String, Font, Vector2, Color)
 - uid: SteelEngine.Renderer.DrawText*
   name: DrawText
@@ -1593,22 +1593,6 @@ references:
   isSpec: "True"
   fullName: SteelEngine.Renderer.DrawTexturedPoly
   nameWithType: Renderer.DrawTexturedPoly
-- uid: SteelEngine.Renderer.Event_OnWindowResize(System.Int32,System.Int32)
-  name: Event_OnWindowResize(int, int)
-  href: api/SteelEngine.Renderer.html#SteelEngine_Renderer_Event_OnWindowResize_System_Int32_System_Int32_
-  commentId: M:SteelEngine.Renderer.Event_OnWindowResize(System.Int32,System.Int32)
-  name.vb: Event_OnWindowResize(Integer, Integer)
-  fullName: SteelEngine.Renderer.Event_OnWindowResize(int, int)
-  fullName.vb: SteelEngine.Renderer.Event_OnWindowResize(Integer, Integer)
-  nameWithType: Renderer.Event_OnWindowResize(int, int)
-  nameWithType.vb: Renderer.Event_OnWindowResize(Integer, Integer)
-- uid: SteelEngine.Renderer.Event_OnWindowResize*
-  name: Event_OnWindowResize
-  href: api/SteelEngine.Renderer.html#SteelEngine_Renderer_Event_OnWindowResize_
-  commentId: Overload:SteelEngine.Renderer.Event_OnWindowResize
-  isSpec: "True"
-  fullName: SteelEngine.Renderer.Event_OnWindowResize
-  nameWithType: Renderer.Event_OnWindowResize
 - uid: SteelEngine.Renderer.Initialize(System.Int32,System.Int32)
   name: Initialize(int, int)
   href: api/SteelEngine.Renderer.html#SteelEngine_Renderer_Initialize_System_Int32_System_Int32_
@@ -1820,6 +1804,19 @@ references:
   commentId: F:SteelEngine.Texture.Data
   fullName: SteelEngine.Texture.Data
   nameWithType: Texture.Data
+- uid: SteelEngine.Texture.Dispose
+  name: Dispose()
+  href: api/SteelEngine.Texture.html#SteelEngine_Texture_Dispose
+  commentId: M:SteelEngine.Texture.Dispose
+  fullName: SteelEngine.Texture.Dispose()
+  nameWithType: Texture.Dispose()
+- uid: SteelEngine.Texture.Dispose*
+  name: Dispose
+  href: api/SteelEngine.Texture.html#SteelEngine_Texture_Dispose_
+  commentId: Overload:SteelEngine.Texture.Dispose
+  isSpec: "True"
+  fullName: SteelEngine.Texture.Dispose
+  nameWithType: Texture.Dispose
 - uid: SteelEngine.Texture.FromBitmap(System.Drawing.Bitmap)
   name: FromBitmap(Bitmap)
   href: api/SteelEngine.Texture.html#SteelEngine_Texture_FromBitmap_System_Drawing_Bitmap_
