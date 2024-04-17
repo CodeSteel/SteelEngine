@@ -1,18 +1,8 @@
 {
-  "api/index.html": {
-    "href": "api/index.html",
-    "title": "Welcome to the Steel Engine Documentaiton! | Steel Engine",
-    "keywords": "Welcome to the Steel Engine Documentaiton! Expand the SteelEngine namespace on the left. Thank you for using the Steel Engine! ❤️"
-  },
   "api/SteelEngine.EngineProperties.html": {
     "href": "api/SteelEngine.EngineProperties.html",
     "title": "Struct EngineProperties | Steel Engine",
     "keywords": "Struct EngineProperties Namespace SteelEngine Assembly SteelEngine.dll This is used to define the 'startup' parameters. An EngineProperties object is passed in the Steel.Preload function and returned before starting the engine. public struct EngineProperties Inherited Members ValueType.Equals(object) ValueType.GetHashCode() ValueType.ToString() object.Equals(object, object) object.GetType() object.ReferenceEquals(object, object) Fields BackgroundColor The background color to draw when cleared. public Color BackgroundColor Field Value Color Height The height of the window. public int Height Field Value int Title The title of the window. public string Title Field Value string Version (optional) The version of the application. public string? Version Field Value string Width The width of the window. public int Width Field Value int"
-  },
-  "api/SteelEngine.html": {
-    "href": "api/SteelEngine.html",
-    "title": "Namespace SteelEngine | Steel Engine",
-    "keywords": "Namespace SteelEngine Classes Renderer Used to render shapes into the view. Shader SteelEngine Texture Structs EngineProperties This is used to define the 'startup' parameters. An EngineProperties object is passed in the Steel.Preload function and returned before starting the engine."
   },
   "api/SteelEngine.Lua.Color.html": {
     "href": "api/SteelEngine.Lua.Color.html",
@@ -38,11 +28,6 @@
     "href": "api/SteelEngine.Lua.Global.html",
     "title": "Class Global | Steel Engine",
     "keywords": "Class Global Namespace SteelEngine.Lua Assembly SteelEngine.dll Represents Lua's global class. public class Global Inheritance object Global Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Methods Clamp(float, float, float) Clamps a value between a min and max. public static float Clamp(float value, float min, float max) Parameters value float min float max float Returns float Lerp(float, float, float) Returns a lerped value from a to b using t as Time. public static float Lerp(float a, float b, float t) Parameters a float b float t float Returns float ScrH() The height of the viewport screen. public static float ScrH() Returns float ScrW() The width of the viewport screen. public static float ScrW() Returns float"
-  },
-  "api/SteelEngine.Lua.html": {
-    "href": "api/SteelEngine.Lua.html",
-    "title": "Namespace SteelEngine.Lua | Steel Engine",
-    "keywords": "Namespace SteelEngine.Lua Classes Color A typical Color class used to store rgba values. Draw Used for sending graphics to the renderer. Global Represents Lua's global class. Input Used for handling user input. KeyCode Time This is used to bring all the time outputs into one class. Vector2 Represents a generic 2D vector array. Window This is used to call functions to the Game Window. Structs FontObject Holds information for loaded fonts. TimerObject Enums CursorState The state of the Cursor when the application is focused."
   },
   "api/SteelEngine.Lua.Input.html": {
     "href": "api/SteelEngine.Lua.Input.html",
@@ -74,6 +59,11 @@
     "title": "Class Window | Steel Engine",
     "keywords": "Class Window Namespace SteelEngine.Lua Assembly SteelEngine.dll This is used to call functions to the Game Window. public class Window Inheritance object Window Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Methods Close() Terminates the application. public static void Close() GetCursorState() Returns the current Cursor State. public static CursorState GetCursorState() Returns CursorState GetFocused() Returns true if the game is the focused window. public static bool GetFocused() Returns bool GetFullscreen() Returns true if the game is running in Fullscreen mode. public static bool GetFullscreen() Returns bool GetSize() Returns the width and height of the window. public static (int, int) GetSize() Returns (int, int) SetCursorState(CursorState) Sets the window's cursor state. public static void SetCursorState(CursorState state) Parameters state CursorState"
   },
+  "api/SteelEngine.Lua.html": {
+    "href": "api/SteelEngine.Lua.html",
+    "title": "Namespace SteelEngine.Lua | Steel Engine",
+    "keywords": "Namespace SteelEngine.Lua Classes Color A typical Color class used to store rgba values. Draw Used for sending graphics to the renderer. Global Represents Lua's global class. Input Used for handling user input. KeyCode Time This is used to bring all the time outputs into one class. Vector2 Represents a generic 2D vector array. Window This is used to call functions to the Game Window. Structs FontObject Holds information for loaded fonts. TimerObject Enums CursorState The state of the Cursor when the application is focused."
+  },
   "api/SteelEngine.Renderer.html": {
     "href": "api/SteelEngine.Renderer.html",
     "title": "Class Renderer | Steel Engine",
@@ -93,6 +83,16 @@
     "href": "api/SteelEngine.Texture.html",
     "title": "Class Texture | Steel Engine",
     "keywords": "Class Texture Namespace SteelEngine Assembly SteelEngine.dll public class Texture : IDisposable Inheritance object Texture Implements IDisposable Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Constructors Texture(int) public Texture(int glHandle) Parameters glHandle int Texture(int, byte[], int, int) public Texture(int glHandle, byte[] data, int width, int height) Parameters glHandle int data byte[] width int height int Texture(int, int, byte[]) public Texture(int width, int height, byte[] data) Parameters width int height int data byte[] Fields Data public readonly byte[] Data Field Value byte[] Handle public readonly int Handle Field Value int Height public readonly int Height Field Value int Width public readonly int Width Field Value int Methods Dispose() Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources. public void Dispose() FromBitmap(Bitmap) Creates a texture from a bitmap public static Texture FromBitmap(Bitmap bitmap) Parameters bitmap Bitmap Returns Texture LoadFromFile(string) Creates a texture from a file public static Texture LoadFromFile(string path) Parameters path string Returns Texture Use(TextureUnit) Uses the Texture in the current GL scope. public void Use(TextureUnit unit) Parameters unit TextureUnit"
+  },
+  "api/SteelEngine.html": {
+    "href": "api/SteelEngine.html",
+    "title": "Namespace SteelEngine | Steel Engine",
+    "keywords": "Namespace SteelEngine Classes Renderer Used to render shapes into the view. Shader SteelEngine Texture Structs EngineProperties This is used to define the 'startup' parameters. An EngineProperties object is passed in the Steel.Preload function and returned before starting the engine."
+  },
+  "api/index.html": {
+    "href": "api/index.html",
+    "title": "Welcome to the Steel Engine Documentaiton! | Steel Engine",
+    "keywords": "Welcome to the Steel Engine Documentaiton! Expand the SteelEngine namespace on the left. Thank you for using the Steel Engine! ❤️"
   },
   "articles/getting_started.html": {
     "href": "articles/getting_started.html",

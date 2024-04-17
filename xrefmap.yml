@@ -55,15 +55,6 @@ references:
   commentId: T:SteelEngine.Lua.Color
   fullName: SteelEngine.Lua.Color
   nameWithType: Color
-- uid: SteelEngine.Lua.Color.#ctor(System.Int32,System.Int32,System.Int32,System.Int32)
-  name: Color(int, int, int, int)
-  href: api/SteelEngine.Lua.Color.html#SteelEngine_Lua_Color__ctor_System_Int32_System_Int32_System_Int32_System_Int32_
-  commentId: M:SteelEngine.Lua.Color.#ctor(System.Int32,System.Int32,System.Int32,System.Int32)
-  name.vb: New(Integer, Integer, Integer, Integer)
-  fullName: SteelEngine.Lua.Color.Color(int, int, int, int)
-  fullName.vb: SteelEngine.Lua.Color.New(Integer, Integer, Integer, Integer)
-  nameWithType: Color.Color(int, int, int, int)
-  nameWithType.vb: Color.New(Integer, Integer, Integer, Integer)
 - uid: SteelEngine.Lua.Color.#ctor(System.Int32,System.Int32,System.Int32)
   name: Color(int, int, int)
   href: api/SteelEngine.Lua.Color.html#SteelEngine_Lua_Color__ctor_System_Int32_System_Int32_System_Int32_
@@ -73,6 +64,15 @@ references:
   fullName.vb: SteelEngine.Lua.Color.New(Integer, Integer, Integer)
   nameWithType: Color.Color(int, int, int)
   nameWithType.vb: Color.New(Integer, Integer, Integer)
+- uid: SteelEngine.Lua.Color.#ctor(System.Int32,System.Int32,System.Int32,System.Int32)
+  name: Color(int, int, int, int)
+  href: api/SteelEngine.Lua.Color.html#SteelEngine_Lua_Color__ctor_System_Int32_System_Int32_System_Int32_System_Int32_
+  commentId: M:SteelEngine.Lua.Color.#ctor(System.Int32,System.Int32,System.Int32,System.Int32)
+  name.vb: New(Integer, Integer, Integer, Integer)
+  fullName: SteelEngine.Lua.Color.Color(int, int, int, int)
+  fullName.vb: SteelEngine.Lua.Color.New(Integer, Integer, Integer, Integer)
+  nameWithType: Color.Color(int, int, int, int)
+  nameWithType.vb: Color.New(Integer, Integer, Integer, Integer)
 - uid: SteelEngine.Lua.Color.#ctor*
   name: Color
   href: api/SteelEngine.Lua.Color.html#SteelEngine_Lua_Color__ctor_
@@ -83,30 +83,6 @@ references:
   fullName.vb: SteelEngine.Lua.Color.New
   nameWithType: Color.Color
   nameWithType.vb: Color.New
-- uid: SteelEngine.Lua.Color.a
-  name: a
-  href: api/SteelEngine.Lua.Color.html#SteelEngine_Lua_Color_a
-  commentId: F:SteelEngine.Lua.Color.a
-  fullName: SteelEngine.Lua.Color.a
-  nameWithType: Color.a
-- uid: SteelEngine.Lua.Color.b
-  name: b
-  href: api/SteelEngine.Lua.Color.html#SteelEngine_Lua_Color_b
-  commentId: F:SteelEngine.Lua.Color.b
-  fullName: SteelEngine.Lua.Color.b
-  nameWithType: Color.b
-- uid: SteelEngine.Lua.Color.g
-  name: g
-  href: api/SteelEngine.Lua.Color.html#SteelEngine_Lua_Color_g
-  commentId: F:SteelEngine.Lua.Color.g
-  fullName: SteelEngine.Lua.Color.g
-  nameWithType: Color.g
-- uid: SteelEngine.Lua.Color.r
-  name: r
-  href: api/SteelEngine.Lua.Color.html#SteelEngine_Lua_Color_r
-  commentId: F:SteelEngine.Lua.Color.r
-  fullName: SteelEngine.Lua.Color.r
-  nameWithType: Color.r
 - uid: SteelEngine.Lua.Color.ToColor4
   name: ToColor4()
   href: api/SteelEngine.Lua.Color.html#SteelEngine_Lua_Color_ToColor4
@@ -149,6 +125,30 @@ references:
   isSpec: "True"
   fullName: SteelEngine.Lua.Color.WithAlpha
   nameWithType: Color.WithAlpha
+- uid: SteelEngine.Lua.Color.a
+  name: a
+  href: api/SteelEngine.Lua.Color.html#SteelEngine_Lua_Color_a
+  commentId: F:SteelEngine.Lua.Color.a
+  fullName: SteelEngine.Lua.Color.a
+  nameWithType: Color.a
+- uid: SteelEngine.Lua.Color.b
+  name: b
+  href: api/SteelEngine.Lua.Color.html#SteelEngine_Lua_Color_b
+  commentId: F:SteelEngine.Lua.Color.b
+  fullName: SteelEngine.Lua.Color.b
+  nameWithType: Color.b
+- uid: SteelEngine.Lua.Color.g
+  name: g
+  href: api/SteelEngine.Lua.Color.html#SteelEngine_Lua_Color_g
+  commentId: F:SteelEngine.Lua.Color.g
+  fullName: SteelEngine.Lua.Color.g
+  nameWithType: Color.g
+- uid: SteelEngine.Lua.Color.r
+  name: r
+  href: api/SteelEngine.Lua.Color.html#SteelEngine_Lua_Color_r
+  commentId: F:SteelEngine.Lua.Color.r
+  fullName: SteelEngine.Lua.Color.r
+  nameWithType: Color.r
 - uid: SteelEngine.Lua.CursorState
   name: CursorState
   href: api/SteelEngine.Lua.CursorState.html
@@ -1761,6 +1761,15 @@ references:
   commentId: T:SteelEngine.Texture
   fullName: SteelEngine.Texture
   nameWithType: Texture
+- uid: SteelEngine.Texture.#ctor(System.Int32)
+  name: Texture(int)
+  href: api/SteelEngine.Texture.html#SteelEngine_Texture__ctor_System_Int32_
+  commentId: M:SteelEngine.Texture.#ctor(System.Int32)
+  name.vb: New(Integer)
+  fullName: SteelEngine.Texture.Texture(int)
+  fullName.vb: SteelEngine.Texture.New(Integer)
+  nameWithType: Texture.Texture(int)
+  nameWithType.vb: Texture.New(Integer)
 - uid: SteelEngine.Texture.#ctor(System.Int32,System.Byte[],System.Int32,System.Int32)
   name: Texture(int, byte[], int, int)
   href: api/SteelEngine.Texture.html#SteelEngine_Texture__ctor_System_Int32_System_Byte___System_Int32_System_Int32_
@@ -1779,15 +1788,6 @@ references:
   fullName.vb: SteelEngine.Texture.New(Integer, Integer, Byte())
   nameWithType: Texture.Texture(int, int, byte[])
   nameWithType.vb: Texture.New(Integer, Integer, Byte())
-- uid: SteelEngine.Texture.#ctor(System.Int32)
-  name: Texture(int)
-  href: api/SteelEngine.Texture.html#SteelEngine_Texture__ctor_System_Int32_
-  commentId: M:SteelEngine.Texture.#ctor(System.Int32)
-  name.vb: New(Integer)
-  fullName: SteelEngine.Texture.Texture(int)
-  fullName.vb: SteelEngine.Texture.New(Integer)
-  nameWithType: Texture.Texture(int)
-  nameWithType.vb: Texture.New(Integer)
 - uid: SteelEngine.Texture.#ctor*
   name: Texture
   href: api/SteelEngine.Texture.html#SteelEngine_Texture__ctor_
