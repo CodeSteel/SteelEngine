@@ -1,11 +1,11 @@
 # Welcome to the Steel Engine! ❤️
-### A 2D Game Engine built with Lua support for creating games with ease.
+### A 2D Game Engine built with integrated Lua support for creating games with ease.
 
 ___
 
-[Follow my Documentation!](https://codesteel.github.io/SteelEngine/)
+[Automated Documentation](https://codesteel.github.io/SteelEngine/api/index.html)
 
-[Check out my other work!](https://www.codesteel.io/projects)
+[Check out my other work!](https://www.codesteel.io/portfolio)
 
 ___
 
